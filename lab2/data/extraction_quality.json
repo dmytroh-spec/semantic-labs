@@ -1,0 +1,7 @@
+{
+  "sample_size": 20,
+  "reviewed_count": 20,
+  "correct_count": 20,
+  "accuracy": 1.0,
+  "backend": "offline"
+}

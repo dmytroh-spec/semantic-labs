@@ -1,0 +1,14 @@
+OK: at least 8 corpus documents (8)
+OK: at least 3 single-document questions
+OK: at least 2 synthesis questions
+OK: at least 3 entity types (7)
+OK: at least 4 relation types (8)
+OK: at least 30 extracted facts (40)
+OK: 20-fact manual verification sample
+OK: fact verification accuracy recorded (100%)
+OK: at least 3 search queries (3)
+OK: keyword and vector results saved
+OK: knowledge graph created (47 nodes, 40 edges)
+OK: Louvain communities detected (9)
+OK: knowledge graph visualization created
+OK: GraphRAG and vector-RAG compared
