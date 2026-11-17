@@ -1,0 +1,15 @@
+PREFIX tour: <https://example.org/tourism/>
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# FILTER selects affordable, highly rated attractions; ORDER BY makes the
+# result deterministic and prioritizes rating before price.
+SELECT ?name ?rating ?price WHERE {
+  ?item a tour:Attraction ;
+        rdfs:label ?name ;
+        schema:ratingValue ?rating ;
+        tour:entryPriceEUR ?price .
+  FILTER(?rating >= 4.7 && ?price <= 15)
+}
+ORDER BY DESC(?rating) ?price ?name
+

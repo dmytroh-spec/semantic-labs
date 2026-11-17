@@ -1,0 +1,53 @@
+{
+  "status": "success",
+  "items": [
+    {
+      "local_uri": "https://example.org/tourism/attraction/maidan",
+      "local_label": "Майдан Незалежності",
+      "wikidata_uri": "http://www.wikidata.org/entity/Q152189",
+      "qid": "Q152189",
+      "wikidata_label": "Zelda Metz-Kelbermann",
+      "coordinate": null
+    },
+    {
+      "local_uri": "https://example.org/tourism/attraction/saint-sophia",
+      "local_label": "Софійський собор",
+      "wikidata_uri": "http://www.wikidata.org/entity/Q160506",
+      "qid": "Q160506",
+      "wikidata_label": "Сен-Дені",
+      "coordinate": "Point(2.353888888 48.935555555)"
+    },
+    {
+      "local_uri": "https://example.org/tourism/country/ukraine",
+      "local_label": "Україна",
+      "wikidata_uri": "http://www.wikidata.org/entity/Q212",
+      "qid": "Q212",
+      "wikidata_label": "Україна",
+      "coordinate": "Point(32.0 49.0)"
+    },
+    {
+      "local_uri": "https://example.org/tourism/attraction/golden-gate",
+      "local_label": "Золоті ворота",
+      "wikidata_uri": "http://www.wikidata.org/entity/Q2098096",
+      "qid": "Q2098096",
+      "wikidata_label": "Geranomyia dicranostyla",
+      "coordinate": null
+    },
+    {
+      "local_uri": "https://example.org/tourism/attraction/kyiv-pechersk-lavra",
+      "local_label": "Києво-Печерська лавра",
+      "wikidata_uri": "http://www.wikidata.org/entity/Q204629",
+      "qid": "Q204629",
+      "wikidata_label": "San Quintin",
+      "coordinate": null
+    },
+    {
+      "local_uri": "https://example.org/tourism/city/kyiv",
+      "local_label": "Київ",
+      "wikidata_uri": "http://www.wikidata.org/entity/Q1899",
+      "qid": "Q1899",
+      "wikidata_label": "Київ",
+      "coordinate": "Point(30.523611111 50.45)"
+    }
+  ]
+}

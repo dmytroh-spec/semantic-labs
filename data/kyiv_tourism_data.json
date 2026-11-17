@@ -1,0 +1,34 @@
+{
+  "countries": [{"id":"ukraine","name":"Україна","wikidata":"http://www.wikidata.org/entity/Q212"}],
+  "cities": [{"id":"kyiv","name":"Київ","country":"ukraine","population":2952301,"wikidata":"http://www.wikidata.org/entity/Q1899"}],
+  "types": [
+    {"id":"museum","name":"Музей"}, {"id":"monument","name":"Монумент"},
+    {"id":"religious-site","name":"Релігійна пам'ятка"},
+    {"id":"historic-site","name":"Історична пам'ятка"}, {"id":"park","name":"Парк"}
+  ],
+  "attractions": [
+    {"id":"saint-sophia","name":"Софійський собор","city":"kyiv","type":"religious-site","rating":4.8,"price":12,"wikidata":"http://www.wikidata.org/entity/Q160506"},
+    {"id":"golden-gate","name":"Золоті ворота","city":"kyiv","type":"historic-site","rating":4.7,"price":5,"wikidata":"http://www.wikidata.org/entity/Q2098096"},
+    {"id":"maidan","name":"Майдан Незалежності","city":"kyiv","type":"monument","rating":4.7,"price":0,"wikidata":"http://www.wikidata.org/entity/Q152189"},
+    {"id":"kyiv-pechersk-lavra","name":"Києво-Печерська лавра","city":"kyiv","type":"religious-site","rating":4.8,"price":8,"wikidata":"http://www.wikidata.org/entity/Q204629"},
+    {"id":"st-michaels-monastery","name":"Михайлівський Золотоверхий монастир","city":"kyiv","type":"religious-site","rating":4.8,"price":0},
+    {"id":"andriivska-church","name":"Андріївська церква","city":"kyiv","type":"religious-site","rating":4.8,"price":5},
+    {"id":"mother-ukraine","name":"Батьківщина-Мати","city":"kyiv","type":"monument","rating":4.8,"price":15},
+    {"id":"national-history-museum","name":"Національний музей історії України","city":"kyiv","type":"museum","rating":4.6,"price":6},
+    {"id":"war-history-museum","name":"Музей історії України у Другій світовій війні","city":"kyiv","type":"museum","rating":4.8,"price":7},
+    {"id":"one-street-museum","name":"Музей однієї вулиці","city":"kyiv","type":"museum","rating":4.7,"price":5},
+    {"id":"mariinskyi-palace","name":"Маріїнський палац","city":"kyiv","type":"historic-site","rating":4.7,"price":0},
+    {"id":"mariinskyi-park","name":"Маріїнський парк","city":"kyiv","type":"park","rating":4.7,"price":0},
+    {"id":"shevchenko-park","name":"Парк імені Тараса Шевченка","city":"kyiv","type":"park","rating":4.7,"price":0},
+    {"id":"landscape-alley","name":"Пейзажна алея","city":"kyiv","type":"park","rating":4.7,"price":0},
+    {"id":"kyiv-funicular","name":"Київський фунікулер","city":"kyiv","type":"historic-site","rating":4.6,"price":1}
+  ],
+  "routes": [
+    {"id":"ancient-kyiv","name":"Стародавній Київ","season":"spring","stops":["saint-sophia","golden-gate","national-history-museum"]},
+    {"id":"spiritual-kyiv","name":"Духовний Київ","season":"summer","stops":["st-michaels-monastery","andriivska-church","kyiv-pechersk-lavra"]},
+    {"id":"kyiv-center","name":"Центр столиці","season":"spring","stops":["maidan","mariinskyi-palace","mariinskyi-park"]},
+    {"id":"military-history","name":"Київ воєнно-історичний","season":"autumn","stops":["war-history-museum","mother-ukraine","kyiv-pechersk-lavra"]},
+    {"id":"andriivskyi-descent","name":"Андріївський узвіз і Поділ","season":"autumn","stops":["national-history-museum","landscape-alley","andriivska-church","one-street-museum","kyiv-funicular"]},
+    {"id":"green-kyiv","name":"Зелений Київ","season":"summer","stops":["shevchenko-park","landscape-alley","mariinskyi-park"]}
+  ]
+}

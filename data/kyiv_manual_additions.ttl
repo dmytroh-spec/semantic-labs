@@ -1,0 +1,9 @@
+@prefix tour: <https://example.org/tourism/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <https://schema.org/> .
+
+<https://example.org/tourism/route/kyiv-weekend>
+    dcterms:description "Дводенний пішохідний маршрут історичним центром Києва"@uk .
+
+<https://example.org/tourism/attraction/saint-sophia>
+    schema:description "Пам'ятка архітектури та монументального живопису XI століття"@uk .

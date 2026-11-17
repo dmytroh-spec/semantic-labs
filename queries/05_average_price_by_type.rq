@@ -1,0 +1,12 @@
+PREFIX tour: <https://example.org/tourism/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# AVG compares admission prices across attraction categories.
+SELECT ?type (AVG(?price) AS ?averagePrice) (COUNT(?item) AS ?count) WHERE {
+  ?item a tour:Attraction ;
+        tour:hasAttractionType ?typeResource ;
+        tour:entryPriceEUR ?price .
+  ?typeResource rdfs:label ?type .
+}
+GROUP BY ?type
+ORDER BY DESC(?averagePrice)

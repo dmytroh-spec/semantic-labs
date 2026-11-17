@@ -1,0 +1,212 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix tour: <https://example.org/tourism/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+tour:Attraction a rdfs:Class .
+
+tour:AttractionType a rdfs:Class .
+
+tour:City a rdfs:Class .
+
+tour:Country a rdfs:Class .
+
+tour:TouristRoute a rdfs:Class .
+
+<https://example.org/tourism/route/ancient-kyiv> a tour:TouristRoute ;
+    rdfs:label "Стародавній Київ"@uk ;
+    tour:includesAttraction <https://example.org/tourism/attraction/golden-gate>,
+        <https://example.org/tourism/attraction/national-history-museum>,
+        <https://example.org/tourism/attraction/saint-sophia> ;
+    tour:recommendedSeason "spring" .
+
+<https://example.org/tourism/route/andriivskyi-descent> a tour:TouristRoute ;
+    rdfs:label "Андріївський узвіз і Поділ"@uk ;
+    tour:includesAttraction <https://example.org/tourism/attraction/andriivska-church>,
+        <https://example.org/tourism/attraction/kyiv-funicular>,
+        <https://example.org/tourism/attraction/landscape-alley>,
+        <https://example.org/tourism/attraction/national-history-museum>,
+        <https://example.org/tourism/attraction/one-street-museum> ;
+    tour:recommendedSeason "autumn" .
+
+<https://example.org/tourism/route/green-kyiv> a tour:TouristRoute ;
+    rdfs:label "Зелений Київ"@uk ;
+    tour:includesAttraction <https://example.org/tourism/attraction/landscape-alley>,
+        <https://example.org/tourism/attraction/mariinskyi-park>,
+        <https://example.org/tourism/attraction/shevchenko-park> ;
+    tour:recommendedSeason "summer" .
+
+<https://example.org/tourism/route/kyiv-center> a tour:TouristRoute ;
+    rdfs:label "Центр столиці"@uk ;
+    tour:includesAttraction <https://example.org/tourism/attraction/maidan>,
+        <https://example.org/tourism/attraction/mariinskyi-palace>,
+        <https://example.org/tourism/attraction/mariinskyi-park> ;
+    tour:recommendedSeason "spring" .
+
+<https://example.org/tourism/route/kyiv-weekend> dcterms:description "Дводенний пішохідний маршрут історичним центром Києва"@uk .
+
+<https://example.org/tourism/route/military-history> a tour:TouristRoute ;
+    rdfs:label "Київ воєнно-історичний"@uk ;
+    tour:includesAttraction <https://example.org/tourism/attraction/kyiv-pechersk-lavra>,
+        <https://example.org/tourism/attraction/mother-ukraine>,
+        <https://example.org/tourism/attraction/war-history-museum> ;
+    tour:recommendedSeason "autumn" .
+
+<https://example.org/tourism/route/spiritual-kyiv> a tour:TouristRoute ;
+    rdfs:label "Духовний Київ"@uk ;
+    tour:includesAttraction <https://example.org/tourism/attraction/andriivska-church>,
+        <https://example.org/tourism/attraction/kyiv-pechersk-lavra>,
+        <https://example.org/tourism/attraction/st-michaels-monastery> ;
+    tour:recommendedSeason "summer" .
+
+<https://example.org/tourism/attraction/maidan> a tour:Attraction ;
+    rdfs:label "Майдан Незалежності"@uk ;
+    owl:sameAs <http://www.wikidata.org/entity/Q152189> ;
+    tour:entryPriceEUR 0.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/monument> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/mariinskyi-palace> ;
+    schema:ratingValue 4.7 .
+
+<https://example.org/tourism/attraction/saint-sophia> a tour:Attraction ;
+    rdfs:label "Софійський собор"@uk ;
+    owl:sameAs <http://www.wikidata.org/entity/Q160506> ;
+    tour:entryPriceEUR 12.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/golden-gate> ;
+    schema:description "Пам'ятка архітектури та монументального живопису XI століття"@uk ;
+    schema:ratingValue 4.8 .
+
+<https://example.org/tourism/attraction/shevchenko-park> a tour:Attraction ;
+    rdfs:label "Парк імені Тараса Шевченка"@uk ;
+    tour:entryPriceEUR 0.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/park> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/landscape-alley> ;
+    schema:ratingValue 4.7 .
+
+<https://example.org/tourism/attraction/st-michaels-monastery> a tour:Attraction ;
+    rdfs:label "Михайлівський Золотоверхий монастир"@uk ;
+    tour:entryPriceEUR 0.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/andriivska-church> ;
+    schema:ratingValue 4.8 .
+
+<https://example.org/tourism/attraction/war-history-museum> a tour:Attraction ;
+    rdfs:label "Музей історії України у Другій світовій війні"@uk ;
+    tour:entryPriceEUR 7.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/museum> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/mother-ukraine> ;
+    schema:ratingValue 4.8 .
+
+<https://example.org/tourism/country/ukraine> a tour:Country ;
+    rdfs:label "Україна"@uk ;
+    owl:sameAs <http://www.wikidata.org/entity/Q212> .
+
+<https://example.org/tourism/attraction/golden-gate> a tour:Attraction ;
+    rdfs:label "Золоті ворота"@uk ;
+    owl:sameAs <http://www.wikidata.org/entity/Q2098096> ;
+    tour:entryPriceEUR 5.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/national-history-museum> ;
+    schema:ratingValue 4.7 .
+
+<https://example.org/tourism/attraction/kyiv-funicular> a tour:Attraction ;
+    rdfs:label "Київський фунікулер"@uk ;
+    tour:entryPriceEUR 1.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    schema:ratingValue 4.6 .
+
+<https://example.org/tourism/attraction/mariinskyi-palace> a tour:Attraction ;
+    rdfs:label "Маріїнський палац"@uk ;
+    tour:entryPriceEUR 0.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/mariinskyi-park> ;
+    schema:ratingValue 4.7 .
+
+<https://example.org/tourism/attraction/mother-ukraine> a tour:Attraction ;
+    rdfs:label "Батьківщина-Мати"@uk ;
+    tour:entryPriceEUR 15.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/monument> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/kyiv-pechersk-lavra> ;
+    schema:ratingValue 4.8 .
+
+<https://example.org/tourism/attraction/one-street-museum> a tour:Attraction ;
+    rdfs:label "Музей однієї вулиці"@uk ;
+    tour:entryPriceEUR 5.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/museum> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/kyiv-funicular> ;
+    schema:ratingValue 4.7 .
+
+<https://example.org/tourism/type/monument> a tour:AttractionType ;
+    rdfs:label "Монумент"@uk .
+
+<https://example.org/tourism/attraction/national-history-museum> a tour:Attraction ;
+    rdfs:label "Національний музей історії України"@uk ;
+    tour:entryPriceEUR 6.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/museum> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/landscape-alley> ;
+    schema:ratingValue 4.6 .
+
+<https://example.org/tourism/type/historic-site> a tour:AttractionType ;
+    rdfs:label "Історична пам'ятка"@uk .
+
+<https://example.org/tourism/type/museum> a tour:AttractionType ;
+    rdfs:label "Музей"@uk .
+
+<https://example.org/tourism/type/park> a tour:AttractionType ;
+    rdfs:label "Парк"@uk .
+
+<https://example.org/tourism/attraction/andriivska-church> a tour:Attraction ;
+    rdfs:label "Андріївська церква"@uk ;
+    tour:entryPriceEUR 5.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/kyiv-pechersk-lavra>,
+        <https://example.org/tourism/attraction/one-street-museum> ;
+    schema:ratingValue 4.8 .
+
+<https://example.org/tourism/attraction/kyiv-pechersk-lavra> a tour:Attraction ;
+    rdfs:label "Києво-Печерська лавра"@uk ;
+    owl:sameAs <http://www.wikidata.org/entity/Q204629> ;
+    tour:entryPriceEUR 8.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    schema:ratingValue 4.8 .
+
+<https://example.org/tourism/attraction/landscape-alley> a tour:Attraction ;
+    rdfs:label "Пейзажна алея"@uk ;
+    tour:entryPriceEUR 0.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/park> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    tour:nextStop <https://example.org/tourism/attraction/andriivska-church>,
+        <https://example.org/tourism/attraction/mariinskyi-park> ;
+    schema:ratingValue 4.7 .
+
+<https://example.org/tourism/attraction/mariinskyi-park> a tour:Attraction ;
+    rdfs:label "Маріїнський парк"@uk ;
+    tour:entryPriceEUR 0.0 ;
+    tour:hasAttractionType <https://example.org/tourism/type/park> ;
+    tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    schema:ratingValue 4.7 .
+
+<https://example.org/tourism/type/religious-site> a tour:AttractionType ;
+    rdfs:label "Релігійна пам'ятка"@uk .
+
+<https://example.org/tourism/city/kyiv> a tour:City ;
+    rdfs:label "Київ"@uk ;
+    owl:sameAs <http://www.wikidata.org/entity/Q1899> ;
+    tour:locatedInCountry <https://example.org/tourism/country/ukraine> ;
+    schema:population 2952301 .
+

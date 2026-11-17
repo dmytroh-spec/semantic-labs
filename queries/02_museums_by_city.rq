@@ -1,0 +1,13 @@
+PREFIX tour: <https://example.org/tourism/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# This query joins Attraction, AttractionType, and City resources.
+SELECT ?museum ?city WHERE {
+  ?item a tour:Attraction ;
+        rdfs:label ?museum ;
+        tour:hasAttractionType <https://example.org/tourism/type/museum> ;
+        tour:locatedInCity ?cityResource .
+  ?cityResource rdfs:label ?city .
+}
+ORDER BY ?city ?museum
+

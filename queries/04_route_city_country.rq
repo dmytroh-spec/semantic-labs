@@ -1,0 +1,15 @@
+PREFIX tour: <https://example.org/tourism/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# The graph traversal is Route -> Attraction -> City -> Country, satisfying
+# the requirement to follow at least three relationships.
+SELECT ?route ?attraction ?city ?country WHERE {
+  ?routeResource a tour:TouristRoute ;
+                 rdfs:label ?route ;
+                 tour:includesAttraction ?item .
+  ?item rdfs:label ?attraction ; tour:locatedInCity ?cityResource .
+  ?cityResource rdfs:label ?city ; tour:locatedInCountry ?countryResource .
+  ?countryResource rdfs:label ?country .
+}
+ORDER BY ?route ?attraction
+

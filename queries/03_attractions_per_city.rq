@@ -1,0 +1,11 @@
+PREFIX tour: <https://example.org/tourism/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+# COUNT and GROUP BY calculate the number of attractions for every city.
+SELECT ?city (COUNT(?item) AS ?attractionCount) WHERE {
+  ?item a tour:Attraction ; tour:locatedInCity ?cityResource .
+  ?cityResource rdfs:label ?city .
+}
+GROUP BY ?city
+ORDER BY DESC(?attractionCount) ?city
+
