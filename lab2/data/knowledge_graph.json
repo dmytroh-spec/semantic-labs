@@ -1,0 +1,437 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "entity_type": "Attraction",
+      "id": "Софійський собор"
+    },
+    {
+      "entity_type": "Person",
+      "id": "Ярослав Мудрий"
+    },
+    {
+      "entity_type": "Concept",
+      "id": "мозаїка Оранти"
+    },
+    {
+      "entity_type": "Institution",
+      "id": "Національний заповідник Софія Київська"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Золоті ворота"
+    },
+    {
+      "entity_type": "Concept",
+      "id": "оборона міста"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Києво-Печерська лавра"
+    },
+    {
+      "entity_type": "Person",
+      "id": "Антоній Печерський"
+    },
+    {
+      "entity_type": "Person",
+      "id": "Феодосій Печерський"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Ближні печери"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Дальні печери"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Велика лаврська дзвіниця"
+    },
+    {
+      "entity_type": "Concept",
+      "id": "книгодрукування"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Андріївський узвіз"
+    },
+    {
+      "entity_type": "District",
+      "id": "Поділ"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Андріївська церква"
+    },
+    {
+      "entity_type": "Person",
+      "id": "Бартоломео Растреллі"
+    },
+    {
+      "entity_type": "Institution",
+      "id": "Музей однієї вулиці"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Пейзажна алея"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Майдан Незалежності"
+    },
+    {
+      "entity_type": "District",
+      "id": "центральний Київ"
+    },
+    {
+      "entity_type": "HistoricalEvent",
+      "id": "Помаранчева революція"
+    },
+    {
+      "entity_type": "HistoricalEvent",
+      "id": "Революція гідності"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Монумент Незалежності"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Хрещатик"
+    },
+    {
+      "entity_type": "Route",
+      "id": "маршрут центральним Києвом"
+    },
+    {
+      "entity_type": "Institution",
+      "id": "Музей історії України у Другій світовій війні"
+    },
+    {
+      "entity_type": "District",
+      "id": "Печерськ"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Батьківщина-Мати"
+    },
+    {
+      "entity_type": "HistoricalEvent",
+      "id": "Друга світова війна"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "парк Вічної Слави"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Контрактова площа"
+    },
+    {
+      "entity_type": "Institution",
+      "id": "Києво-Могилянська академія"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Київський фунікулер"
+    },
+    {
+      "entity_type": "Concept",
+      "id": "торгівля і ремесла"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Маріїнський парк"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Маріїнський палац"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Парк імені Тараса Шевченка"
+    },
+    {
+      "entity_type": "Person",
+      "id": "Тарас Шевченко"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Володимирська гірка"
+    },
+    {
+      "entity_type": "Concept",
+      "id": "панорама Дніпра"
+    },
+    {
+      "entity_type": "Concept",
+      "id": "сучасні скульптури"
+    },
+    {
+      "entity_type": "Route",
+      "id": "маршрут княжого Києва"
+    },
+    {
+      "entity_type": "Attraction",
+      "id": "Михайлівський Золотоверхий монастир"
+    },
+    {
+      "entity_type": "Route",
+      "id": "релігійний маршрут"
+    },
+    {
+      "entity_type": "Route",
+      "id": "маршрут новітньої історії"
+    },
+    {
+      "entity_type": "Route",
+      "id": "зелений маршрут"
+    }
+  ],
+  "links": [
+    {
+      "relation": "associated_with",
+      "fact_id": "f01",
+      "source": "Софійський собор",
+      "target": "Ярослав Мудрий"
+    },
+    {
+      "relation": "has_feature",
+      "fact_id": "f02",
+      "source": "Софійський собор",
+      "target": "мозаїка Оранти"
+    },
+    {
+      "relation": "part_of",
+      "fact_id": "f03",
+      "source": "Софійський собор",
+      "target": "Національний заповідник Софія Київська"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f33",
+      "source": "Софійський собор",
+      "target": "маршрут княжого Києва"
+    },
+    {
+      "relation": "has_function",
+      "fact_id": "f04",
+      "source": "Золоті ворота",
+      "target": "оборона міста"
+    },
+    {
+      "relation": "connected_to",
+      "fact_id": "f05",
+      "source": "Золоті ворота",
+      "target": "Софійський собор"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f34",
+      "source": "Золоті ворота",
+      "target": "маршрут княжого Києва"
+    },
+    {
+      "relation": "associated_with",
+      "fact_id": "f06",
+      "source": "Києво-Печерська лавра",
+      "target": "Антоній Печерський"
+    },
+    {
+      "relation": "associated_with",
+      "fact_id": "f07",
+      "source": "Києво-Печерська лавра",
+      "target": "Феодосій Печерський"
+    },
+    {
+      "relation": "has_function",
+      "fact_id": "f11",
+      "source": "Києво-Печерська лавра",
+      "target": "книгодрукування"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f37",
+      "source": "Києво-Печерська лавра",
+      "target": "релігійний маршрут"
+    },
+    {
+      "relation": "part_of",
+      "fact_id": "f08",
+      "source": "Ближні печери",
+      "target": "Києво-Печерська лавра"
+    },
+    {
+      "relation": "part_of",
+      "fact_id": "f09",
+      "source": "Дальні печери",
+      "target": "Києво-Печерська лавра"
+    },
+    {
+      "relation": "part_of",
+      "fact_id": "f10",
+      "source": "Велика лаврська дзвіниця",
+      "target": "Києво-Печерська лавра"
+    },
+    {
+      "relation": "connected_to",
+      "fact_id": "f12",
+      "source": "Андріївський узвіз",
+      "target": "Поділ"
+    },
+    {
+      "relation": "has_function",
+      "fact_id": "f28",
+      "source": "Поділ",
+      "target": "торгівля і ремесла"
+    },
+    {
+      "relation": "created_by",
+      "fact_id": "f13",
+      "source": "Андріївська церква",
+      "target": "Бартоломео Растреллі"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f36",
+      "source": "Андріївська церква",
+      "target": "релігійний маршрут"
+    },
+    {
+      "relation": "located_in",
+      "fact_id": "f14",
+      "source": "Музей однієї вулиці",
+      "target": "Андріївський узвіз"
+    },
+    {
+      "relation": "connected_to",
+      "fact_id": "f15",
+      "source": "Пейзажна алея",
+      "target": "Андріївський узвіз"
+    },
+    {
+      "relation": "has_feature",
+      "fact_id": "f32",
+      "source": "Пейзажна алея",
+      "target": "сучасні скульптури"
+    },
+    {
+      "relation": "located_in",
+      "fact_id": "f16",
+      "source": "Майдан Незалежності",
+      "target": "центральний Київ"
+    },
+    {
+      "relation": "associated_with",
+      "fact_id": "f17",
+      "source": "Майдан Незалежності",
+      "target": "Помаранчева революція"
+    },
+    {
+      "relation": "associated_with",
+      "fact_id": "f18",
+      "source": "Майдан Незалежності",
+      "target": "Революція гідності"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f38",
+      "source": "Майдан Незалежності",
+      "target": "маршрут новітньої історії"
+    },
+    {
+      "relation": "part_of",
+      "fact_id": "f19",
+      "source": "Монумент Незалежності",
+      "target": "Майдан Незалежності"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f20",
+      "source": "Хрещатик",
+      "target": "маршрут центральним Києвом"
+    },
+    {
+      "relation": "located_in",
+      "fact_id": "f21",
+      "source": "Музей історії України у Другій світовій війні",
+      "target": "Печерськ"
+    },
+    {
+      "relation": "associated_with",
+      "fact_id": "f23",
+      "source": "Музей історії України у Другій світовій війні",
+      "target": "Друга світова війна"
+    },
+    {
+      "relation": "part_of",
+      "fact_id": "f22",
+      "source": "Батьківщина-Мати",
+      "target": "Музей історії України у Другій світовій війні"
+    },
+    {
+      "relation": "connected_to",
+      "fact_id": "f24",
+      "source": "парк Вічної Слави",
+      "target": "Києво-Печерська лавра"
+    },
+    {
+      "relation": "located_in",
+      "fact_id": "f25",
+      "source": "Контрактова площа",
+      "target": "Поділ"
+    },
+    {
+      "relation": "located_in",
+      "fact_id": "f26",
+      "source": "Києво-Могилянська академія",
+      "target": "Поділ"
+    },
+    {
+      "relation": "connected_to",
+      "fact_id": "f27",
+      "source": "Київський фунікулер",
+      "target": "Поділ"
+    },
+    {
+      "relation": "connected_to",
+      "fact_id": "f29",
+      "source": "Маріїнський парк",
+      "target": "Маріїнський палац"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f39",
+      "source": "Маріїнський парк",
+      "target": "зелений маршрут"
+    },
+    {
+      "relation": "associated_with",
+      "fact_id": "f30",
+      "source": "Парк імені Тараса Шевченка",
+      "target": "Тарас Шевченко"
+    },
+    {
+      "relation": "has_feature",
+      "fact_id": "f31",
+      "source": "Володимирська гірка",
+      "target": "панорама Дніпра"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f40",
+      "source": "Володимирська гірка",
+      "target": "зелений маршрут"
+    },
+    {
+      "relation": "included_in_route",
+      "fact_id": "f35",
+      "source": "Михайлівський Золотоверхий монастир",
+      "target": "релігійний маршрут"
+    }
+  ]
+}
