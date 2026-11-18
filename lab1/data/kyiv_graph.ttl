@@ -63,7 +63,7 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/maidan> a tour:Attraction ;
     rdfs:label "Майдан Незалежності"@uk ;
-    owl:sameAs <http://www.wikidata.org/entity/Q152189> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q863759> ;
     tour:entryPriceEUR 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/monument> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
@@ -72,7 +72,7 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/saint-sophia> a tour:Attraction ;
     rdfs:label "Софійський собор"@uk ;
-    owl:sameAs <http://www.wikidata.org/entity/Q160506> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q830054> ;
     tour:entryPriceEUR 12.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
@@ -110,7 +110,7 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/golden-gate> a tour:Attraction ;
     rdfs:label "Золоті ворота"@uk ;
-    owl:sameAs <http://www.wikidata.org/entity/Q2098096> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q4289171> ;
     tour:entryPriceEUR 5.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
@@ -179,7 +179,7 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/kyiv-pechersk-lavra> a tour:Attraction ;
     rdfs:label "Києво-Печерська лавра"@uk ;
-    owl:sameAs <http://www.wikidata.org/entity/Q204629> ;
+    owl:sameAs <http://www.wikidata.org/entity/Q242711> ;
     tour:entryPriceEUR 8.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;

@@ -7,10 +7,10 @@
     {"id":"historic-site","name":"Історична пам'ятка"}, {"id":"park","name":"Парк"}
   ],
   "attractions": [
-    {"id":"saint-sophia","name":"Софійський собор","city":"kyiv","type":"religious-site","rating":4.8,"price":12,"wikidata":"http://www.wikidata.org/entity/Q160506"},
-    {"id":"golden-gate","name":"Золоті ворота","city":"kyiv","type":"historic-site","rating":4.7,"price":5,"wikidata":"http://www.wikidata.org/entity/Q2098096"},
-    {"id":"maidan","name":"Майдан Незалежності","city":"kyiv","type":"monument","rating":4.7,"price":0,"wikidata":"http://www.wikidata.org/entity/Q152189"},
-    {"id":"kyiv-pechersk-lavra","name":"Києво-Печерська лавра","city":"kyiv","type":"religious-site","rating":4.8,"price":8,"wikidata":"http://www.wikidata.org/entity/Q204629"},
+    {"id":"saint-sophia","name":"Софійський собор","city":"kyiv","type":"religious-site","rating":4.8,"price":12,"wikidata":"http://www.wikidata.org/entity/Q830054"},
+    {"id":"golden-gate","name":"Золоті ворота","city":"kyiv","type":"historic-site","rating":4.7,"price":5,"wikidata":"http://www.wikidata.org/entity/Q4289171"},
+    {"id":"maidan","name":"Майдан Незалежності","city":"kyiv","type":"monument","rating":4.7,"price":0,"wikidata":"http://www.wikidata.org/entity/Q863759"},
+    {"id":"kyiv-pechersk-lavra","name":"Києво-Печерська лавра","city":"kyiv","type":"religious-site","rating":4.8,"price":8,"wikidata":"http://www.wikidata.org/entity/Q242711"},
     {"id":"st-michaels-monastery","name":"Михайлівський Золотоверхий монастир","city":"kyiv","type":"religious-site","rating":4.8,"price":0},
     {"id":"andriivska-church","name":"Андріївська церква","city":"kyiv","type":"religious-site","rating":4.8,"price":5},
     {"id":"mother-ukraine","name":"Батьківщина-Мати","city":"kyiv","type":"monument","rating":4.8,"price":15},
