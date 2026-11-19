@@ -13,6 +13,7 @@ from knowledge_graph import build_graph, detect_communities
 from models import FactCollection
 from vector_search import VectorIndex
 from corpus import build_chunks
+from entity_resolver import build_label_index, enrich_fact_ids
 
 
 class Lab2Tests(unittest.TestCase):
@@ -39,6 +40,13 @@ class Lab2Tests(unittest.TestCase):
         graph = build_graph()
         self.assertGreaterEqual(graph.number_of_edges(), 30)
         self.assertGreaterEqual(len(detect_communities(graph)), 2)
+
+    def test_shared_attraction_identifiers(self):
+        facts = FactCollection.model_validate_json((DATA / "facts.json").read_text(encoding="utf-8"))
+        enriched = enrich_fact_ids(facts)
+        sophia = next(fact for fact in enriched.facts if fact.subject == "Софійський собор")
+        self.assertEqual(sophia.subject_id, "attraction/saint-sophia")
+        self.assertIn("софійський собор", build_label_index())
 
     def test_required_outputs_exist(self):
         for name in ("knowledge_graph.png", "search_comparison.json",

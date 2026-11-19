@@ -1,0 +1,1378 @@
+{
+  "schema_version": "1.0",
+  "countries": [
+    {
+      "id": "ukraine",
+      "name": "Україна",
+      "wikidata": "http://www.wikidata.org/entity/Q212"
+    }
+  ],
+  "cities": [
+    {
+      "id": "kyiv",
+      "name": "Київ",
+      "country": "ukraine",
+      "population": 2952301,
+      "wikidata": "http://www.wikidata.org/entity/Q1899"
+    }
+  ],
+  "categories": [
+    {
+      "id": "museum",
+      "name": "Музей"
+    },
+    {
+      "id": "monument",
+      "name": "Монумент"
+    },
+    {
+      "id": "religious-site",
+      "name": "Релігійна пам'ятка"
+    },
+    {
+      "id": "historic-site",
+      "name": "Історична пам'ятка"
+    },
+    {
+      "id": "park",
+      "name": "Парк"
+    }
+  ],
+  "attractions": [
+    {
+      "id": "saint-sophia",
+      "name": "Софійський собор",
+      "aliases": [
+        "Софія Київська"
+      ],
+      "city": "kyiv",
+      "type": "religious-site",
+      "category": "Релігійна пам'ятка",
+      "description": "Пам'ятка архітектури XI століття та осередок монументального мистецтва княжого Києва.",
+      "latitude": 50.4529,
+      "longitude": 30.5143,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Sophia%20Cathedral%20in%20Kyiv.jpg",
+      "rating": 4.8,
+      "price": 12,
+      "wikidata": "http://www.wikidata.org/entity/Q830054",
+      "entity_id": "attraction/saint-sophia",
+      "semantic_facts": [
+        {
+          "id": "f01",
+          "subject": "Софійський собор",
+          "subject_id": "attraction/saint-sophia",
+          "subject_type": "Attraction",
+          "relation": "associated_with",
+          "object": "Ярослав Мудрий",
+          "object_id": "entity/person/ярослав-мудрий",
+          "object_type": "Person",
+          "source_doc": "01_sophia_and_golden_gate.txt",
+          "evidence": "Софійський собор заклали в XI столітті за правління Ярослава Мудрого.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f02",
+          "subject": "Софійський собор",
+          "subject_id": "attraction/saint-sophia",
+          "subject_type": "Attraction",
+          "relation": "has_feature",
+          "object": "мозаїка Оранти",
+          "object_id": "entity/concept/мозаїка-оранти",
+          "object_type": "Concept",
+          "source_doc": "01_sophia_and_golden_gate.txt",
+          "evidence": "Найвідомішою мозаїкою є постать Оранти в центральній апсиді.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f03",
+          "subject": "Софійський собор",
+          "subject_id": "attraction/saint-sophia",
+          "subject_type": "Attraction",
+          "relation": "part_of",
+          "object": "Національний заповідник Софія Київська",
+          "object_id": "entity/institution/національний-заповідник-софія-київська",
+          "object_type": "Institution",
+          "source_doc": "01_sophia_and_golden_gate.txt",
+          "evidence": "Собор входить до Національного заповідника Софія Київська.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f05",
+          "subject": "Золоті ворота",
+          "subject_id": "attraction/golden-gate",
+          "subject_type": "Attraction",
+          "relation": "connected_to",
+          "object": "Софійський собор",
+          "object_id": "attraction/saint-sophia",
+          "object_type": "Attraction",
+          "source_doc": "01_sophia_and_golden_gate.txt",
+          "evidence": "Від Софійської площі до Золотих воріт можна пройти пішки.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f33",
+          "subject": "Софійський собор",
+          "subject_id": "attraction/saint-sophia",
+          "subject_type": "Attraction",
+          "relation": "included_in_route",
+          "object": "маршрут княжого Києва",
+          "object_id": "entity/route/маршрут-княжого-києва",
+          "object_type": "Route",
+          "source_doc": "08_kyiv_routes.txt",
+          "evidence": "Маршрут княжого Києва об'єднує Софійський собор і Золоті ворота.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "golden-gate",
+      "name": "Золоті ворота",
+      "aliases": [
+        "Золоті ворота Києва"
+      ],
+      "city": "kyiv",
+      "type": "historic-site",
+      "category": "Історична пам'ятка",
+      "description": "Реконструйована головна брама середньовічного Києва, споруджена за князя Ярослава Мудрого.",
+      "latitude": 50.4488,
+      "longitude": 30.5133,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Gate%20in%20Kyiv.jpg",
+      "rating": 4.7,
+      "price": 5,
+      "wikidata": "http://www.wikidata.org/entity/Q4289171",
+      "entity_id": "attraction/golden-gate",
+      "semantic_facts": [
+        {
+          "id": "f04",
+          "subject": "Золоті ворота",
+          "subject_id": "attraction/golden-gate",
+          "subject_type": "Attraction",
+          "relation": "has_function",
+          "object": "оборона міста",
+          "object_id": "entity/concept/оборона-міста",
+          "object_type": "Concept",
+          "source_doc": "01_sophia_and_golden_gate.txt",
+          "evidence": "Вони поєднували оборонну та символічну функції.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f05",
+          "subject": "Золоті ворота",
+          "subject_id": "attraction/golden-gate",
+          "subject_type": "Attraction",
+          "relation": "connected_to",
+          "object": "Софійський собор",
+          "object_id": "attraction/saint-sophia",
+          "object_type": "Attraction",
+          "source_doc": "01_sophia_and_golden_gate.txt",
+          "evidence": "Від Софійської площі до Золотих воріт можна пройти пішки.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f34",
+          "subject": "Золоті ворота",
+          "subject_id": "attraction/golden-gate",
+          "subject_type": "Attraction",
+          "relation": "included_in_route",
+          "object": "маршрут княжого Києва",
+          "object_id": "entity/route/маршрут-княжого-києва",
+          "object_type": "Route",
+          "source_doc": "08_kyiv_routes.txt",
+          "evidence": "Маршрут княжого Києва об'єднує Софійський собор і Золоті ворота.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "maidan",
+      "name": "Майдан Незалежності",
+      "aliases": [
+        "Майдан"
+      ],
+      "city": "kyiv",
+      "type": "monument",
+      "category": "Монумент",
+      "description": "Центральна площа Києва та важливий громадський простір новітньої історії України.",
+      "latitude": 50.4501,
+      "longitude": 30.5234,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Maidan%20Nezalezhnosti%20in%20Kyiv.jpg",
+      "rating": 4.7,
+      "price": 0,
+      "wikidata": "http://www.wikidata.org/entity/Q863759",
+      "entity_id": "attraction/maidan",
+      "semantic_facts": [
+        {
+          "id": "f16",
+          "subject": "Майдан Незалежності",
+          "subject_id": "attraction/maidan",
+          "subject_type": "Attraction",
+          "relation": "located_in",
+          "object": "центральний Київ",
+          "object_id": "entity/district/центральний-київ",
+          "object_type": "District",
+          "source_doc": "04_maidan_and_khreshchatyk.txt",
+          "evidence": "Майдан Незалежності та Хрещатик утворюють головний громадський простір центрального Києва.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f17",
+          "subject": "Майдан Незалежності",
+          "subject_id": "attraction/maidan",
+          "subject_type": "Attraction",
+          "relation": "associated_with",
+          "object": "Помаранчева революція",
+          "object_id": "entity/historicalevent/помаранчева-революція",
+          "object_type": "HistoricalEvent",
+          "source_doc": "04_maidan_and_khreshchatyk.txt",
+          "evidence": "Площа стала місцем масових подій, зокрема Помаранчевої революції.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f18",
+          "subject": "Майдан Незалежності",
+          "subject_id": "attraction/maidan",
+          "subject_type": "Attraction",
+          "relation": "associated_with",
+          "object": "Революція гідності",
+          "object_id": "entity/historicalevent/революція-гідності",
+          "object_type": "HistoricalEvent",
+          "source_doc": "04_maidan_and_khreshchatyk.txt",
+          "evidence": "Площа стала місцем масових подій, зокрема Революції гідності.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f19",
+          "subject": "Монумент Незалежності",
+          "subject_id": "entity/attraction/монумент-незалежності",
+          "subject_type": "Attraction",
+          "relation": "part_of",
+          "object": "Майдан Незалежності",
+          "object_id": "attraction/maidan",
+          "object_type": "Attraction",
+          "source_doc": "04_maidan_and_khreshchatyk.txt",
+          "evidence": "Монумент Незалежності є головною вертикальною домінантою площі.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f38",
+          "subject": "Майдан Незалежності",
+          "subject_id": "attraction/maidan",
+          "subject_type": "Attraction",
+          "relation": "included_in_route",
+          "object": "маршрут новітньої історії",
+          "object_id": "entity/route/маршрут-новітньої-історії",
+          "object_type": "Route",
+          "source_doc": "08_kyiv_routes.txt",
+          "evidence": "Маршрут новітньої історії проходить через Хрещатик і Майдан Незалежності.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "kyiv-pechersk-lavra",
+      "name": "Києво-Печерська лавра",
+      "aliases": [
+        "Київська лавра",
+        "Лавра"
+      ],
+      "city": "kyiv",
+      "type": "religious-site",
+      "category": "Релігійна пам'ятка",
+      "description": "Історичний православний монастирський комплекс із печерами, храмами та музеями.",
+      "latitude": 50.4346,
+      "longitude": 30.559,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Pechersk%20Lavra.jpg",
+      "rating": 4.8,
+      "price": 8,
+      "wikidata": "http://www.wikidata.org/entity/Q242711",
+      "entity_id": "attraction/kyiv-pechersk-lavra",
+      "semantic_facts": [
+        {
+          "id": "f06",
+          "subject": "Києво-Печерська лавра",
+          "subject_id": "attraction/kyiv-pechersk-lavra",
+          "subject_type": "Attraction",
+          "relation": "associated_with",
+          "object": "Антоній Печерський",
+          "object_id": "entity/person/антоній-печерський",
+          "object_type": "Person",
+          "source_doc": "02_lavra.txt",
+          "evidence": "Її початок пов'язують із ченцями Антонієм і Феодосієм.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f07",
+          "subject": "Києво-Печерська лавра",
+          "subject_id": "attraction/kyiv-pechersk-lavra",
+          "subject_type": "Attraction",
+          "relation": "associated_with",
+          "object": "Феодосій Печерський",
+          "object_id": "entity/person/феодосій-печерський",
+          "object_type": "Person",
+          "source_doc": "02_lavra.txt",
+          "evidence": "Її початок пов'язують із ченцями Антонієм і Феодосієм.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f08",
+          "subject": "Ближні печери",
+          "subject_id": "entity/attraction/ближні-печери",
+          "subject_type": "Attraction",
+          "relation": "part_of",
+          "object": "Києво-Печерська лавра",
+          "object_id": "attraction/kyiv-pechersk-lavra",
+          "object_type": "Attraction",
+          "source_doc": "02_lavra.txt",
+          "evidence": "Комплекс поділяють на Верхню лавру, Ближні печери й Дальні печери.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f09",
+          "subject": "Дальні печери",
+          "subject_id": "entity/attraction/дальні-печери",
+          "subject_type": "Attraction",
+          "relation": "part_of",
+          "object": "Києво-Печерська лавра",
+          "object_id": "attraction/kyiv-pechersk-lavra",
+          "object_type": "Attraction",
+          "source_doc": "02_lavra.txt",
+          "evidence": "Комплекс поділяють на Верхню лавру, Ближні печери й Дальні печери.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f10",
+          "subject": "Велика лаврська дзвіниця",
+          "subject_id": "entity/attraction/велика-лаврська-дзвіниця",
+          "subject_type": "Attraction",
+          "relation": "part_of",
+          "object": "Києво-Печерська лавра",
+          "object_id": "attraction/kyiv-pechersk-lavra",
+          "object_type": "Attraction",
+          "source_doc": "02_lavra.txt",
+          "evidence": "Велика лаврська дзвіниця стала важливою вертикальною домінантою панорами Києва.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f11",
+          "subject": "Києво-Печерська лавра",
+          "subject_id": "attraction/kyiv-pechersk-lavra",
+          "subject_type": "Attraction",
+          "relation": "has_function",
+          "object": "книгодрукування",
+          "object_id": "entity/concept/книгодрукування",
+          "object_type": "Concept",
+          "source_doc": "02_lavra.txt",
+          "evidence": "Тут переписували й друкували книги, створювали ікони та навчали духовенство.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f24",
+          "subject": "парк Вічної Слави",
+          "subject_id": "entity/attraction/парк-вічної-слави",
+          "subject_type": "Attraction",
+          "relation": "connected_to",
+          "object": "Києво-Печерська лавра",
+          "object_id": "attraction/kyiv-pechersk-lavra",
+          "object_type": "Attraction",
+          "source_doc": "05_war_museum.txt",
+          "evidence": "Комплекс можна включити до маршруту разом із лаврою та парком Вічної Слави.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f37",
+          "subject": "Києво-Печерська лавра",
+          "subject_id": "attraction/kyiv-pechersk-lavra",
+          "subject_type": "Attraction",
+          "relation": "included_in_route",
+          "object": "релігійний маршрут",
+          "object_id": "entity/route/релігійний-маршрут",
+          "object_type": "Route",
+          "source_doc": "08_kyiv_routes.txt",
+          "evidence": "Релігійний маршрут проходить через Андріївську церкву до Києво-Печерської лаври.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "st-michaels-monastery",
+      "name": "Михайлівський Золотоверхий монастир",
+      "aliases": [
+        "Михайлівський монастир"
+      ],
+      "city": "kyiv",
+      "type": "religious-site",
+      "category": "Релігійна пам'ятка",
+      "description": "Православний монастир у центрі Києва, відомий золотоверхим собором і мозаїками.",
+      "latitude": 50.4556,
+      "longitude": 30.5228,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/St.%20Michael%27s%20Golden-Domed%20Monastery.jpg",
+      "rating": 4.8,
+      "price": 0,
+      "entity_id": "attraction/st-michaels-monastery",
+      "semantic_facts": [
+        {
+          "id": "f35",
+          "subject": "Михайлівський Золотоверхий монастир",
+          "subject_id": "attraction/st-michaels-monastery",
+          "subject_type": "Attraction",
+          "relation": "included_in_route",
+          "object": "релігійний маршрут",
+          "object_id": "entity/route/релігійний-маршрут",
+          "object_type": "Route",
+          "source_doc": "08_kyiv_routes.txt",
+          "evidence": "Релігійний маршрут починається від Михайлівського Золотоверхого монастиря.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "andriivska-church",
+      "name": "Андріївська церква",
+      "aliases": [
+        "Андріївська церква в Києві"
+      ],
+      "city": "kyiv",
+      "type": "religious-site",
+      "category": "Релігійна пам'ятка",
+      "description": "Барокова церква XVIII століття за проєктом Бартоломео Растреллі над Андріївським узвозом.",
+      "latitude": 50.459,
+      "longitude": 30.5177,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/St%20Andrew%27s%20Church%20Kyiv.jpg",
+      "rating": 4.8,
+      "price": 5,
+      "entity_id": "attraction/andriivska-church",
+      "semantic_facts": [
+        {
+          "id": "f13",
+          "subject": "Андріївська церква",
+          "subject_id": "attraction/andriivska-church",
+          "subject_type": "Attraction",
+          "relation": "created_by",
+          "object": "Бартоломео Растреллі",
+          "object_id": "entity/person/бартоломео-растреллі",
+          "object_type": "Person",
+          "source_doc": "03_andriivskyi_descent.txt",
+          "evidence": "Андріївська церква спроєктована архітектором Бартоломео Растреллі.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f36",
+          "subject": "Андріївська церква",
+          "subject_id": "attraction/andriivska-church",
+          "subject_type": "Attraction",
+          "relation": "included_in_route",
+          "object": "релігійний маршрут",
+          "object_id": "entity/route/релігійний-маршрут",
+          "object_type": "Route",
+          "source_doc": "08_kyiv_routes.txt",
+          "evidence": "Релігійний маршрут проходить через Андріївську церкву до лаври.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "mother-ukraine",
+      "name": "Батьківщина-Мати",
+      "aliases": [
+        "Монумент Батьківщина-Мати"
+      ],
+      "city": "kyiv",
+      "type": "monument",
+      "category": "Монумент",
+      "description": "Монументальна скульптура та домінанта меморіального комплексу Національного музею історії України у Другій світовій війні.",
+      "latitude": 50.4265,
+      "longitude": 30.5631,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mother%20Ukraine%20Kyiv.jpg",
+      "rating": 4.8,
+      "price": 15,
+      "entity_id": "attraction/mother-ukraine",
+      "semantic_facts": [
+        {
+          "id": "f22",
+          "subject": "Батьківщина-Мати",
+          "subject_id": "attraction/mother-ukraine",
+          "subject_type": "Attraction",
+          "relation": "part_of",
+          "object": "Музей історії України у Другій світовій війні",
+          "object_id": "attraction/war-history-museum",
+          "object_type": "Institution",
+          "source_doc": "05_war_museum.txt",
+          "evidence": "Центральною домінантою меморіального комплексу є монумент Батьківщина-Мати.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "national-history-museum",
+      "name": "Національний музей історії України",
+      "aliases": [
+        "Музей історії України"
+      ],
+      "city": "kyiv",
+      "type": "museum",
+      "category": "Музей",
+      "description": "Музейна колекція, що представляє історію України від давнини до сучасності.",
+      "latitude": 50.4584,
+      "longitude": 30.5151,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine.jpg",
+      "rating": 4.6,
+      "price": 6,
+      "entity_id": "attraction/national-history-museum",
+      "semantic_facts": []
+    },
+    {
+      "id": "war-history-museum",
+      "name": "Музей історії України у Другій світовій війні",
+      "aliases": [
+        "Національний музей історії України у Другій світовій війні"
+      ],
+      "city": "kyiv",
+      "type": "museum",
+      "category": "Музей",
+      "description": "Меморіально-музейний комплекс, присвячений досвіду України у Другій світовій війні.",
+      "latitude": 50.4268,
+      "longitude": 30.563,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine%20in%20the%20Second%20World%20War.jpg",
+      "rating": 4.8,
+      "price": 7,
+      "entity_id": "attraction/war-history-museum",
+      "semantic_facts": [
+        {
+          "id": "f21",
+          "subject": "Музей історії України у Другій світовій війні",
+          "subject_id": "attraction/war-history-museum",
+          "subject_type": "Institution",
+          "relation": "located_in",
+          "object": "Печерськ",
+          "object_id": "entity/district/печерськ",
+          "object_type": "District",
+          "source_doc": "05_war_museum.txt",
+          "evidence": "Музей розташований на печерських пагорбах біля Дніпра.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f22",
+          "subject": "Батьківщина-Мати",
+          "subject_id": "attraction/mother-ukraine",
+          "subject_type": "Attraction",
+          "relation": "part_of",
+          "object": "Музей історії України у Другій світовій війні",
+          "object_id": "attraction/war-history-museum",
+          "object_type": "Institution",
+          "source_doc": "05_war_museum.txt",
+          "evidence": "Центральною домінантою меморіального комплексу є монумент Батьківщина-Мати.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f23",
+          "subject": "Музей історії України у Другій світовій війні",
+          "subject_id": "attraction/war-history-museum",
+          "subject_type": "Institution",
+          "relation": "associated_with",
+          "object": "Друга світова війна",
+          "object_id": "entity/historicalevent/друга-світова-війна",
+          "object_type": "HistoricalEvent",
+          "source_doc": "05_war_museum.txt",
+          "evidence": "Експозиції музею розповідають про досвід Другої світової війни.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "one-street-museum",
+      "name": "Музей однієї вулиці",
+      "aliases": [],
+      "city": "kyiv",
+      "type": "museum",
+      "category": "Музей",
+      "description": "Музей історії Андріївського узвозу, його будинків, мешканців і культурного життя.",
+      "latitude": 50.4611,
+      "longitude": 30.5177,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/One%20Street%20Museum%20Kyiv.jpg",
+      "rating": 4.7,
+      "price": 5,
+      "entity_id": "attraction/one-street-museum",
+      "semantic_facts": [
+        {
+          "id": "f14",
+          "subject": "Музей однієї вулиці",
+          "subject_id": "attraction/one-street-museum",
+          "subject_type": "Institution",
+          "relation": "located_in",
+          "object": "Андріївський узвіз",
+          "object_id": "entity/attraction/андріївський-узвіз",
+          "object_type": "Attraction",
+          "source_doc": "03_andriivskyi_descent.txt",
+          "evidence": "Музей однієї вулиці розповідає про мешканців і будинки Андріївського узвозу.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "mariinskyi-palace",
+      "name": "Маріїнський палац",
+      "aliases": [],
+      "city": "kyiv",
+      "type": "historic-site",
+      "category": "Історична пам'ятка",
+      "description": "Бароковий палац XVIII століття, офіційна церемоніальна резиденція Президента України.",
+      "latitude": 50.4484,
+      "longitude": 30.5375,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariinskyi%20Palace%20in%20Kyiv.jpg",
+      "rating": 4.7,
+      "price": 0,
+      "entity_id": "attraction/mariinskyi-palace",
+      "semantic_facts": [
+        {
+          "id": "f29",
+          "subject": "Маріїнський парк",
+          "subject_id": "attraction/mariinskyi-park",
+          "subject_type": "Attraction",
+          "relation": "connected_to",
+          "object": "Маріїнський палац",
+          "object_id": "attraction/mariinskyi-palace",
+          "object_type": "Attraction",
+          "source_doc": "07_parks_and_viewpoints.txt",
+          "evidence": "Маріїнський парк розташований біля Маріїнського палацу.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "mariinskyi-park",
+      "name": "Маріїнський парк",
+      "aliases": [],
+      "city": "kyiv",
+      "type": "park",
+      "category": "Парк",
+      "description": "Історичний парк біля Маріїнського палацу з прогулянковими алеями та видами на Дніпро.",
+      "latitude": 50.4473,
+      "longitude": 30.5402,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariinskyi%20Park%20Kyiv.jpg",
+      "rating": 4.7,
+      "price": 0,
+      "entity_id": "attraction/mariinskyi-park",
+      "semantic_facts": [
+        {
+          "id": "f29",
+          "subject": "Маріїнський парк",
+          "subject_id": "attraction/mariinskyi-park",
+          "subject_type": "Attraction",
+          "relation": "connected_to",
+          "object": "Маріїнський палац",
+          "object_id": "attraction/mariinskyi-palace",
+          "object_type": "Attraction",
+          "source_doc": "07_parks_and_viewpoints.txt",
+          "evidence": "Маріїнський парк розташований біля Маріїнського палацу.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f39",
+          "subject": "Маріїнський парк",
+          "subject_id": "attraction/mariinskyi-park",
+          "subject_type": "Attraction",
+          "relation": "included_in_route",
+          "object": "зелений маршрут",
+          "object_id": "entity/route/зелений-маршрут",
+          "object_type": "Route",
+          "source_doc": "08_kyiv_routes.txt",
+          "evidence": "Зелений маршрут з'єднує парк Шевченка, Володимирську гірку й Маріїнський парк.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "shevchenko-park",
+      "name": "Парк імені Тараса Шевченка",
+      "aliases": [
+        "Парк Шевченка"
+      ],
+      "city": "kyiv",
+      "type": "park",
+      "category": "Парк",
+      "description": "Центральний міський парк навпроти університету з пам'ятником Тарасові Шевченку.",
+      "latitude": 50.4412,
+      "longitude": 30.5119,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Taras%20Shevchenko%20Park%20Kyiv.jpg",
+      "rating": 4.7,
+      "price": 0,
+      "entity_id": "attraction/shevchenko-park",
+      "semantic_facts": [
+        {
+          "id": "f30",
+          "subject": "Парк імені Тараса Шевченка",
+          "subject_id": "attraction/shevchenko-park",
+          "subject_type": "Attraction",
+          "relation": "associated_with",
+          "object": "Тарас Шевченко",
+          "object_id": "entity/person/тарас-шевченко",
+          "object_type": "Person",
+          "source_doc": "07_parks_and_viewpoints.txt",
+          "evidence": "Парк є частиною культурного маршруту, пов'язаного з постаттю Шевченка.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "landscape-alley",
+      "name": "Пейзажна алея",
+      "aliases": [],
+      "city": "kyiv",
+      "type": "park",
+      "category": "Парк",
+      "description": "Прогулянкова алея зі скульптурами, дитячими майданчиками та панорамами старого Києва.",
+      "latitude": 50.4577,
+      "longitude": 30.5106,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Alley%20Kyiv.jpg",
+      "rating": 4.7,
+      "price": 0,
+      "entity_id": "attraction/landscape-alley",
+      "semantic_facts": [
+        {
+          "id": "f15",
+          "subject": "Пейзажна алея",
+          "subject_id": "attraction/landscape-alley",
+          "subject_type": "Attraction",
+          "relation": "connected_to",
+          "object": "Андріївський узвіз",
+          "object_id": "entity/attraction/андріївський-узвіз",
+          "object_type": "Attraction",
+          "source_doc": "03_andriivskyi_descent.txt",
+          "evidence": "Пейзажна алея неподалік поєднує прогулянковий простір із сучасними об'єктами.",
+          "confidence": 1.0
+        },
+        {
+          "id": "f32",
+          "subject": "Пейзажна алея",
+          "subject_id": "attraction/landscape-alley",
+          "subject_type": "Attraction",
+          "relation": "has_feature",
+          "object": "сучасні скульптури",
+          "object_id": "entity/concept/сучасні-скульптури",
+          "object_type": "Concept",
+          "source_doc": "07_parks_and_viewpoints.txt",
+          "evidence": "Пейзажна алея пропонує сучасні скульптури, майданчики та види на старий Київ.",
+          "confidence": 1.0
+        }
+      ]
+    },
+    {
+      "id": "kyiv-funicular",
+      "name": "Київський фунікулер",
+      "aliases": [
+        "Фунікулер"
+      ],
+      "city": "kyiv",
+      "type": "historic-site",
+      "category": "Історична пам'ятка",
+      "description": "Історична транспортна лінія, що з'єднує Поділ із Михайлівською площею у верхньому місті.",
+      "latitude": 50.4593,
+      "longitude": 30.525,
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Funicular.jpg",
+      "rating": 4.6,
+      "price": 1,
+      "entity_id": "attraction/kyiv-funicular",
+      "semantic_facts": [
+        {
+          "id": "f27",
+          "subject": "Київський фунікулер",
+          "subject_id": "attraction/kyiv-funicular",
+          "subject_type": "Attraction",
+          "relation": "connected_to",
+          "object": "Поділ",
+          "object_id": "entity/district/поділ",
+          "object_type": "District",
+          "source_doc": "06_podils_museums.txt",
+          "evidence": "Київський фунікулер з'єднує Поділ із верхнім містом.",
+          "confidence": 1.0
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "ancient-kyiv",
+      "name": "Стародавній Київ",
+      "season": "spring",
+      "stops": [
+        "saint-sophia",
+        "golden-gate",
+        "national-history-museum"
+      ]
+    },
+    {
+      "id": "spiritual-kyiv",
+      "name": "Духовний Київ",
+      "season": "summer",
+      "stops": [
+        "st-michaels-monastery",
+        "andriivska-church",
+        "kyiv-pechersk-lavra"
+      ]
+    },
+    {
+      "id": "kyiv-center",
+      "name": "Центр столиці",
+      "season": "spring",
+      "stops": [
+        "maidan",
+        "mariinskyi-palace",
+        "mariinskyi-park"
+      ]
+    },
+    {
+      "id": "military-history",
+      "name": "Київ воєнно-історичний",
+      "season": "autumn",
+      "stops": [
+        "war-history-museum",
+        "mother-ukraine",
+        "kyiv-pechersk-lavra"
+      ]
+    },
+    {
+      "id": "andriivskyi-descent",
+      "name": "Андріївський узвіз і Поділ",
+      "season": "autumn",
+      "stops": [
+        "national-history-museum",
+        "landscape-alley",
+        "andriivska-church",
+        "one-street-museum",
+        "kyiv-funicular"
+      ]
+    },
+    {
+      "id": "green-kyiv",
+      "name": "Зелений Київ",
+      "season": "summer",
+      "stops": [
+        "shevchenko-park",
+        "landscape-alley",
+        "mariinskyi-park"
+      ]
+    }
+  ],
+  "knowledge_facts": [
+    {
+      "id": "f01",
+      "subject": "Софійський собор",
+      "subject_id": "attraction/saint-sophia",
+      "subject_type": "Attraction",
+      "relation": "associated_with",
+      "object": "Ярослав Мудрий",
+      "object_id": "entity/person/ярослав-мудрий",
+      "object_type": "Person",
+      "source_doc": "01_sophia_and_golden_gate.txt",
+      "evidence": "Софійський собор заклали в XI столітті за правління Ярослава Мудрого.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f02",
+      "subject": "Софійський собор",
+      "subject_id": "attraction/saint-sophia",
+      "subject_type": "Attraction",
+      "relation": "has_feature",
+      "object": "мозаїка Оранти",
+      "object_id": "entity/concept/мозаїка-оранти",
+      "object_type": "Concept",
+      "source_doc": "01_sophia_and_golden_gate.txt",
+      "evidence": "Найвідомішою мозаїкою є постать Оранти в центральній апсиді.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f03",
+      "subject": "Софійський собор",
+      "subject_id": "attraction/saint-sophia",
+      "subject_type": "Attraction",
+      "relation": "part_of",
+      "object": "Національний заповідник Софія Київська",
+      "object_id": "entity/institution/національний-заповідник-софія-київська",
+      "object_type": "Institution",
+      "source_doc": "01_sophia_and_golden_gate.txt",
+      "evidence": "Собор входить до Національного заповідника Софія Київська.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f04",
+      "subject": "Золоті ворота",
+      "subject_id": "attraction/golden-gate",
+      "subject_type": "Attraction",
+      "relation": "has_function",
+      "object": "оборона міста",
+      "object_id": "entity/concept/оборона-міста",
+      "object_type": "Concept",
+      "source_doc": "01_sophia_and_golden_gate.txt",
+      "evidence": "Вони поєднували оборонну та символічну функції.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f05",
+      "subject": "Золоті ворота",
+      "subject_id": "attraction/golden-gate",
+      "subject_type": "Attraction",
+      "relation": "connected_to",
+      "object": "Софійський собор",
+      "object_id": "attraction/saint-sophia",
+      "object_type": "Attraction",
+      "source_doc": "01_sophia_and_golden_gate.txt",
+      "evidence": "Від Софійської площі до Золотих воріт можна пройти пішки.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f06",
+      "subject": "Києво-Печерська лавра",
+      "subject_id": "attraction/kyiv-pechersk-lavra",
+      "subject_type": "Attraction",
+      "relation": "associated_with",
+      "object": "Антоній Печерський",
+      "object_id": "entity/person/антоній-печерський",
+      "object_type": "Person",
+      "source_doc": "02_lavra.txt",
+      "evidence": "Її початок пов'язують із ченцями Антонієм і Феодосієм.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f07",
+      "subject": "Києво-Печерська лавра",
+      "subject_id": "attraction/kyiv-pechersk-lavra",
+      "subject_type": "Attraction",
+      "relation": "associated_with",
+      "object": "Феодосій Печерський",
+      "object_id": "entity/person/феодосій-печерський",
+      "object_type": "Person",
+      "source_doc": "02_lavra.txt",
+      "evidence": "Її початок пов'язують із ченцями Антонієм і Феодосієм.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f08",
+      "subject": "Ближні печери",
+      "subject_id": "entity/attraction/ближні-печери",
+      "subject_type": "Attraction",
+      "relation": "part_of",
+      "object": "Києво-Печерська лавра",
+      "object_id": "attraction/kyiv-pechersk-lavra",
+      "object_type": "Attraction",
+      "source_doc": "02_lavra.txt",
+      "evidence": "Комплекс поділяють на Верхню лавру, Ближні печери й Дальні печери.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f09",
+      "subject": "Дальні печери",
+      "subject_id": "entity/attraction/дальні-печери",
+      "subject_type": "Attraction",
+      "relation": "part_of",
+      "object": "Києво-Печерська лавра",
+      "object_id": "attraction/kyiv-pechersk-lavra",
+      "object_type": "Attraction",
+      "source_doc": "02_lavra.txt",
+      "evidence": "Комплекс поділяють на Верхню лавру, Ближні печери й Дальні печери.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f10",
+      "subject": "Велика лаврська дзвіниця",
+      "subject_id": "entity/attraction/велика-лаврська-дзвіниця",
+      "subject_type": "Attraction",
+      "relation": "part_of",
+      "object": "Києво-Печерська лавра",
+      "object_id": "attraction/kyiv-pechersk-lavra",
+      "object_type": "Attraction",
+      "source_doc": "02_lavra.txt",
+      "evidence": "Велика лаврська дзвіниця стала важливою вертикальною домінантою панорами Києва.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f11",
+      "subject": "Києво-Печерська лавра",
+      "subject_id": "attraction/kyiv-pechersk-lavra",
+      "subject_type": "Attraction",
+      "relation": "has_function",
+      "object": "книгодрукування",
+      "object_id": "entity/concept/книгодрукування",
+      "object_type": "Concept",
+      "source_doc": "02_lavra.txt",
+      "evidence": "Тут переписували й друкували книги, створювали ікони та навчали духовенство.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f12",
+      "subject": "Андріївський узвіз",
+      "subject_id": "entity/attraction/андріївський-узвіз",
+      "subject_type": "Attraction",
+      "relation": "connected_to",
+      "object": "Поділ",
+      "object_id": "entity/district/поділ",
+      "object_type": "District",
+      "source_doc": "03_andriivskyi_descent.txt",
+      "evidence": "Андріївський узвіз з'єднує верхнє місто з Подолом.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f13",
+      "subject": "Андріївська церква",
+      "subject_id": "attraction/andriivska-church",
+      "subject_type": "Attraction",
+      "relation": "created_by",
+      "object": "Бартоломео Растреллі",
+      "object_id": "entity/person/бартоломео-растреллі",
+      "object_type": "Person",
+      "source_doc": "03_andriivskyi_descent.txt",
+      "evidence": "Андріївська церква спроєктована архітектором Бартоломео Растреллі.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f14",
+      "subject": "Музей однієї вулиці",
+      "subject_id": "attraction/one-street-museum",
+      "subject_type": "Institution",
+      "relation": "located_in",
+      "object": "Андріївський узвіз",
+      "object_id": "entity/attraction/андріївський-узвіз",
+      "object_type": "Attraction",
+      "source_doc": "03_andriivskyi_descent.txt",
+      "evidence": "Музей однієї вулиці розповідає про мешканців і будинки Андріївського узвозу.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f15",
+      "subject": "Пейзажна алея",
+      "subject_id": "attraction/landscape-alley",
+      "subject_type": "Attraction",
+      "relation": "connected_to",
+      "object": "Андріївський узвіз",
+      "object_id": "entity/attraction/андріївський-узвіз",
+      "object_type": "Attraction",
+      "source_doc": "03_andriivskyi_descent.txt",
+      "evidence": "Пейзажна алея неподалік поєднує прогулянковий простір із сучасними об'єктами.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f16",
+      "subject": "Майдан Незалежності",
+      "subject_id": "attraction/maidan",
+      "subject_type": "Attraction",
+      "relation": "located_in",
+      "object": "центральний Київ",
+      "object_id": "entity/district/центральний-київ",
+      "object_type": "District",
+      "source_doc": "04_maidan_and_khreshchatyk.txt",
+      "evidence": "Майдан Незалежності та Хрещатик утворюють головний громадський простір центрального Києва.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f17",
+      "subject": "Майдан Незалежності",
+      "subject_id": "attraction/maidan",
+      "subject_type": "Attraction",
+      "relation": "associated_with",
+      "object": "Помаранчева революція",
+      "object_id": "entity/historicalevent/помаранчева-революція",
+      "object_type": "HistoricalEvent",
+      "source_doc": "04_maidan_and_khreshchatyk.txt",
+      "evidence": "Площа стала місцем масових подій, зокрема Помаранчевої революції.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f18",
+      "subject": "Майдан Незалежності",
+      "subject_id": "attraction/maidan",
+      "subject_type": "Attraction",
+      "relation": "associated_with",
+      "object": "Революція гідності",
+      "object_id": "entity/historicalevent/революція-гідності",
+      "object_type": "HistoricalEvent",
+      "source_doc": "04_maidan_and_khreshchatyk.txt",
+      "evidence": "Площа стала місцем масових подій, зокрема Революції гідності.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f19",
+      "subject": "Монумент Незалежності",
+      "subject_id": "entity/attraction/монумент-незалежності",
+      "subject_type": "Attraction",
+      "relation": "part_of",
+      "object": "Майдан Незалежності",
+      "object_id": "attraction/maidan",
+      "object_type": "Attraction",
+      "source_doc": "04_maidan_and_khreshchatyk.txt",
+      "evidence": "Монумент Незалежності є головною вертикальною домінантою площі.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f20",
+      "subject": "Хрещатик",
+      "subject_id": "entity/attraction/хрещатик",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "маршрут центральним Києвом",
+      "object_id": "entity/route/маршрут-центральним-києвом",
+      "object_type": "Route",
+      "source_doc": "04_maidan_and_khreshchatyk.txt",
+      "evidence": "Пішохідний маршрут центральним Києвом може проходити Хрещатиком через Майдан.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f21",
+      "subject": "Музей історії України у Другій світовій війні",
+      "subject_id": "attraction/war-history-museum",
+      "subject_type": "Institution",
+      "relation": "located_in",
+      "object": "Печерськ",
+      "object_id": "entity/district/печерськ",
+      "object_type": "District",
+      "source_doc": "05_war_museum.txt",
+      "evidence": "Музей розташований на печерських пагорбах біля Дніпра.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f22",
+      "subject": "Батьківщина-Мати",
+      "subject_id": "attraction/mother-ukraine",
+      "subject_type": "Attraction",
+      "relation": "part_of",
+      "object": "Музей історії України у Другій світовій війні",
+      "object_id": "attraction/war-history-museum",
+      "object_type": "Institution",
+      "source_doc": "05_war_museum.txt",
+      "evidence": "Центральною домінантою меморіального комплексу є монумент Батьківщина-Мати.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f23",
+      "subject": "Музей історії України у Другій світовій війні",
+      "subject_id": "attraction/war-history-museum",
+      "subject_type": "Institution",
+      "relation": "associated_with",
+      "object": "Друга світова війна",
+      "object_id": "entity/historicalevent/друга-світова-війна",
+      "object_type": "HistoricalEvent",
+      "source_doc": "05_war_museum.txt",
+      "evidence": "Експозиції музею розповідають про досвід Другої світової війни.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f24",
+      "subject": "парк Вічної Слави",
+      "subject_id": "entity/attraction/парк-вічної-слави",
+      "subject_type": "Attraction",
+      "relation": "connected_to",
+      "object": "Києво-Печерська лавра",
+      "object_id": "attraction/kyiv-pechersk-lavra",
+      "object_type": "Attraction",
+      "source_doc": "05_war_museum.txt",
+      "evidence": "Комплекс можна включити до маршруту разом із лаврою та парком Вічної Слави.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f25",
+      "subject": "Контрактова площа",
+      "subject_id": "entity/attraction/контрактова-площа",
+      "subject_type": "Attraction",
+      "relation": "located_in",
+      "object": "Поділ",
+      "object_id": "entity/district/поділ",
+      "object_type": "District",
+      "source_doc": "06_podils_museums.txt",
+      "evidence": "Контрактова площа була місцем ярмарків і ділових зустрічей на Подолі.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f26",
+      "subject": "Києво-Могилянська академія",
+      "subject_id": "entity/institution/києво-могилянська-академія",
+      "subject_type": "Institution",
+      "relation": "located_in",
+      "object": "Поділ",
+      "object_id": "entity/district/поділ",
+      "object_type": "District",
+      "source_doc": "06_podils_museums.txt",
+      "evidence": "Києво-Могилянська академія сформувала важливий освітній осередок Подолу.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f27",
+      "subject": "Київський фунікулер",
+      "subject_id": "attraction/kyiv-funicular",
+      "subject_type": "Attraction",
+      "relation": "connected_to",
+      "object": "Поділ",
+      "object_id": "entity/district/поділ",
+      "object_type": "District",
+      "source_doc": "06_podils_museums.txt",
+      "evidence": "Київський фунікулер з'єднує Поділ із верхнім містом.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f28",
+      "subject": "Поділ",
+      "subject_id": "entity/district/поділ",
+      "subject_type": "District",
+      "relation": "has_function",
+      "object": "торгівля і ремесла",
+      "object_id": "entity/concept/торгівля-і-ремесла",
+      "object_type": "Concept",
+      "source_doc": "06_podils_museums.txt",
+      "evidence": "Історія Подолу пов'язана з торгівлею, ремеслами, освітою та самоврядуванням.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f29",
+      "subject": "Маріїнський парк",
+      "subject_id": "attraction/mariinskyi-park",
+      "subject_type": "Attraction",
+      "relation": "connected_to",
+      "object": "Маріїнський палац",
+      "object_id": "attraction/mariinskyi-palace",
+      "object_type": "Attraction",
+      "source_doc": "07_parks_and_viewpoints.txt",
+      "evidence": "Маріїнський парк розташований біля Маріїнського палацу.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f30",
+      "subject": "Парк імені Тараса Шевченка",
+      "subject_id": "attraction/shevchenko-park",
+      "subject_type": "Attraction",
+      "relation": "associated_with",
+      "object": "Тарас Шевченко",
+      "object_id": "entity/person/тарас-шевченко",
+      "object_type": "Person",
+      "source_doc": "07_parks_and_viewpoints.txt",
+      "evidence": "Парк є частиною культурного маршруту, пов'язаного з постаттю Шевченка.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f31",
+      "subject": "Володимирська гірка",
+      "subject_id": "entity/attraction/володимирська-гірка",
+      "subject_type": "Attraction",
+      "relation": "has_feature",
+      "object": "панорама Дніпра",
+      "object_id": "entity/concept/панорама-дніпра",
+      "object_type": "Concept",
+      "source_doc": "07_parks_and_viewpoints.txt",
+      "evidence": "Володимирська гірка відома панорамою Дніпра.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f32",
+      "subject": "Пейзажна алея",
+      "subject_id": "attraction/landscape-alley",
+      "subject_type": "Attraction",
+      "relation": "has_feature",
+      "object": "сучасні скульптури",
+      "object_id": "entity/concept/сучасні-скульптури",
+      "object_type": "Concept",
+      "source_doc": "07_parks_and_viewpoints.txt",
+      "evidence": "Пейзажна алея пропонує сучасні скульптури, майданчики та види на старий Київ.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f33",
+      "subject": "Софійський собор",
+      "subject_id": "attraction/saint-sophia",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "маршрут княжого Києва",
+      "object_id": "entity/route/маршрут-княжого-києва",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Маршрут княжого Києва об'єднує Софійський собор і Золоті ворота.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f34",
+      "subject": "Золоті ворота",
+      "subject_id": "attraction/golden-gate",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "маршрут княжого Києва",
+      "object_id": "entity/route/маршрут-княжого-києва",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Маршрут княжого Києва об'єднує Софійський собор і Золоті ворота.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f35",
+      "subject": "Михайлівський Золотоверхий монастир",
+      "subject_id": "attraction/st-michaels-monastery",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "релігійний маршрут",
+      "object_id": "entity/route/релігійний-маршрут",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Релігійний маршрут починається від Михайлівського Золотоверхого монастиря.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f36",
+      "subject": "Андріївська церква",
+      "subject_id": "attraction/andriivska-church",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "релігійний маршрут",
+      "object_id": "entity/route/релігійний-маршрут",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Релігійний маршрут проходить через Андріївську церкву до лаври.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f37",
+      "subject": "Києво-Печерська лавра",
+      "subject_id": "attraction/kyiv-pechersk-lavra",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "релігійний маршрут",
+      "object_id": "entity/route/релігійний-маршрут",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Релігійний маршрут проходить через Андріївську церкву до Києво-Печерської лаври.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f38",
+      "subject": "Майдан Незалежності",
+      "subject_id": "attraction/maidan",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "маршрут новітньої історії",
+      "object_id": "entity/route/маршрут-новітньої-історії",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Маршрут новітньої історії проходить через Хрещатик і Майдан Незалежності.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f39",
+      "subject": "Маріїнський парк",
+      "subject_id": "attraction/mariinskyi-park",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "зелений маршрут",
+      "object_id": "entity/route/зелений-маршрут",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Зелений маршрут з'єднує парк Шевченка, Володимирську гірку й Маріїнський парк.",
+      "confidence": 1.0
+    },
+    {
+      "id": "f40",
+      "subject": "Володимирська гірка",
+      "subject_id": "entity/attraction/володимирська-гірка",
+      "subject_type": "Attraction",
+      "relation": "included_in_route",
+      "object": "зелений маршрут",
+      "object_id": "entity/route/зелений-маршрут",
+      "object_type": "Route",
+      "source_doc": "08_kyiv_routes.txt",
+      "evidence": "Зелений маршрут з'єднує парк Шевченка, Володимирську гірку й Маріїнський парк.",
+      "confidence": 1.0
+    }
+  ]
+}

@@ -20,9 +20,11 @@ class Fact(BaseModel):
 
     id: str
     subject: str
+    subject_id: str | None = None
     subject_type: EntityType
     relation: RelationType
     object: str
+    object_id: str | None = None
     object_type: EntityType
     source_doc: str
     evidence: str = Field(min_length=10)

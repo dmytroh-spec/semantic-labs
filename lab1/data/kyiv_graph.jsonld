@@ -12,334 +12,15 @@
     ]
   },
   {
-    "@id": "https://example.org/tourism/attraction/maidan",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Майдан Незалежності"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#sameAs": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q863759"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "0"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
-      {
-        "@id": "https://example.org/tourism/type/monument"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://example.org/tourism/nextStop": [
-      {
-        "@id": "https://example.org/tourism/attraction/mariinskyi-palace"
-      }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.7"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/type/historic-site",
-    "@type": [
-      "https://example.org/tourism/AttractionType"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Історична пам'ятка"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/route/military-history",
-    "@type": [
-      "https://example.org/tourism/TouristRoute"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Київ воєнно-історичний"
-      }
-    ],
-    "https://example.org/tourism/includesAttraction": [
-      {
-        "@id": "https://example.org/tourism/attraction/war-history-museum"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/mother-ukraine"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra"
-      }
-    ],
-    "https://example.org/tourism/recommendedSeason": [
-      {
-        "@value": "autumn"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/city/kyiv",
-    "@type": [
-      "https://example.org/tourism/City"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Київ"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#sameAs": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q1899"
-      }
-    ],
-    "https://example.org/tourism/locatedInCountry": [
-      {
-        "@id": "https://example.org/tourism/country/ukraine"
-      }
-    ],
-    "https://schema.org/population": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#integer",
-        "@value": 2952301
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/route/spiritual-kyiv",
-    "@type": [
-      "https://example.org/tourism/TouristRoute"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Духовний Київ"
-      }
-    ],
-    "https://example.org/tourism/includesAttraction": [
-      {
-        "@id": "https://example.org/tourism/attraction/st-michaels-monastery"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/andriivska-church"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra"
-      }
-    ],
-    "https://example.org/tourism/recommendedSeason": [
-      {
-        "@value": "summer"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/type/religious-site",
-    "@type": [
-      "https://example.org/tourism/AttractionType"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Релігійна пам'ятка"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/attraction/one-street-museum",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Музей однієї вулиці"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "5"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
-      {
-        "@id": "https://example.org/tourism/type/museum"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://example.org/tourism/nextStop": [
-      {
-        "@id": "https://example.org/tourism/attraction/kyiv-funicular"
-      }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.7"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/country/ukraine",
-    "@type": [
-      "https://example.org/tourism/Country"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Україна"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#sameAs": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q212"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/attraction/mariinskyi-palace",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Маріїнський палац"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "0"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
-      {
-        "@id": "https://example.org/tourism/type/historic-site"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://example.org/tourism/nextStop": [
-      {
-        "@id": "https://example.org/tourism/attraction/mariinskyi-park"
-      }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.7"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/City",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/type/monument",
-    "@type": [
-      "https://example.org/tourism/AttractionType"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Монумент"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Києво-Печерська лавра"
-      }
-    ],
-    "http://www.w3.org/2002/07/owl#sameAs": [
-      {
-        "@id": "http://www.wikidata.org/entity/Q242711"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "8"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
-      {
-        "@id": "https://example.org/tourism/type/religious-site"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.8"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/route/kyiv-weekend",
-    "http://purl.org/dc/terms/description": [
-      {
-        "@language": "uk",
-        "@value": "Дводенний пішохідний маршрут історичним центром Києва"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/Attraction",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/AttractionType",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ]
-  },
-  {
     "@id": "https://example.org/tourism/attraction/golden-gate",
     "@type": [
       "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Реконструйована головна брама середньовічного Києва, споруджена за князя Ярослава Мудрого."
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -373,6 +54,35 @@
         "@id": "https://example.org/tourism/attraction/national-history-museum"
       }
     ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Золоті ворота Києва"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Історична пам'ятка"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Gate%20in%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4488"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5133"
+      }
+    ],
     "https://schema.org/ratingValue": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#decimal",
@@ -381,20 +91,259 @@
     ]
   },
   {
-    "@id": "https://example.org/tourism/attraction/st-michaels-monastery",
+    "@id": "https://example.org/tourism/attraction/mother-ukraine",
     "@type": [
       "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Монументальна скульптура та домінанта меморіального комплексу Національного музею історії України у Другій світовій війні."
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "uk",
-        "@value": "Михайлівський Золотоверхий монастир"
+        "@value": "Батьківщина-Мати"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "15"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/monument"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://example.org/tourism/nextStop": [
+      {
+        "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Монумент Батьківщина-Мати"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Монумент"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Mother%20Ukraine%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4265"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5631"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.8"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/mariinskyi-park",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Історичний парк біля Маріїнського палацу з прогулянковими алеями та видами на Дніпро."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Маріїнський парк"
       }
     ],
     "https://example.org/tourism/entryPriceEUR": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#decimal",
         "@value": "0"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/park"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Парк"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariinskyi%20Park%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4473"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5402"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.7"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/national-history-museum",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Музейна колекція, що представляє історію України від давнини до сучасності."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Національний музей історії України"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "6"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/museum"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://example.org/tourism/nextStop": [
+      {
+        "@id": "https://example.org/tourism/attraction/landscape-alley"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Музей історії України"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Музей"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4584"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5151"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.6"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/country/ukraine",
+    "@type": [
+      "https://example.org/tourism/Country"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Україна"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q212"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/saint-sophia",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Пам'ятка архітектури XI століття та осередок монументального мистецтва княжого Києва."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Софійський собор"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q830054"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "12"
       }
     ],
     "https://example.org/tourism/hasAttractionType": [
@@ -409,7 +358,42 @@
     ],
     "https://example.org/tourism/nextStop": [
       {
-        "@id": "https://example.org/tourism/attraction/andriivska-church"
+        "@id": "https://example.org/tourism/attraction/golden-gate"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Софія Київська"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Релігійна пам'ятка"
+      }
+    ],
+    "https://schema.org/description": [
+      {
+        "@language": "uk",
+        "@value": "Пам'ятка архітектури та монументального живопису XI століття"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Sophia%20Cathedral%20in%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4529"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5143"
       }
     ],
     "https://schema.org/ratingValue": [
@@ -420,9 +404,203 @@
     ]
   },
   {
+    "@id": "https://example.org/tourism/route/kyiv-weekend",
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Дводенний пішохідний маршрут історичним центром Києва"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/landscape-alley",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Прогулянкова алея зі скульптурами, дитячими майданчиками та панорамами старого Києва."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Пейзажна алея"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/park"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://example.org/tourism/nextStop": [
+      {
+        "@id": "https://example.org/tourism/attraction/andriivska-church"
+      },
+      {
+        "@id": "https://example.org/tourism/attraction/mariinskyi-park"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Парк"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Alley%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4577"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5106"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.7"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/city/kyiv",
+    "@type": [
+      "https://example.org/tourism/City"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Київ"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q1899"
+      }
+    ],
+    "https://example.org/tourism/locatedInCountry": [
+      {
+        "@id": "https://example.org/tourism/country/ukraine"
+      }
+    ],
+    "https://schema.org/population": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#integer",
+        "@value": 2952301
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/type/religious-site",
+    "@type": [
+      "https://example.org/tourism/AttractionType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Релігійна пам'ятка"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/one-street-museum",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Музей історії Андріївського узвозу, його будинків, мешканців і культурного життя."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Музей однієї вулиці"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "5"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/museum"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://example.org/tourism/nextStop": [
+      {
+        "@id": "https://example.org/tourism/attraction/kyiv-funicular"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Музей"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/One%20Street%20Museum%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4611"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5177"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.7"
+      }
+    ]
+  },
+  {
     "@id": "https://example.org/tourism/attraction/shevchenko-park",
     "@type": [
       "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Центральний міський парк навпроти університету з пам'ятником Тарасові Шевченку."
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -451,10 +629,116 @@
         "@id": "https://example.org/tourism/attraction/landscape-alley"
       }
     ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Парк Шевченка"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Парк"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Taras%20Shevchenko%20Park%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4412"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5119"
+      }
+    ],
     "https://schema.org/ratingValue": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#decimal",
         "@value": "4.7"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/andriivska-church",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Барокова церква XVIII століття за проєктом Бартоломео Растреллі над Андріївським узвозом."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Андріївська церква"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "5"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/religious-site"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://example.org/tourism/nextStop": [
+      {
+        "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra"
+      },
+      {
+        "@id": "https://example.org/tourism/attraction/one-street-museum"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Андріївська церква в Києві"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Релігійна пам'ятка"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/St%20Andrew%27s%20Church%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.459"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5177"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.8"
       }
     ]
   },
@@ -483,6 +767,195 @@
     "https://example.org/tourism/recommendedSeason": [
       {
         "@value": "spring"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/route/green-kyiv",
+    "@type": [
+      "https://example.org/tourism/TouristRoute"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Зелений Київ"
+      }
+    ],
+    "https://example.org/tourism/includesAttraction": [
+      {
+        "@id": "https://example.org/tourism/attraction/shevchenko-park"
+      },
+      {
+        "@id": "https://example.org/tourism/attraction/landscape-alley"
+      },
+      {
+        "@id": "https://example.org/tourism/attraction/mariinskyi-park"
+      }
+    ],
+    "https://example.org/tourism/recommendedSeason": [
+      {
+        "@value": "summer"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/st-michaels-monastery",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Православний монастир у центрі Києва, відомий золотоверхим собором і мозаїками."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Михайлівський Золотоверхий монастир"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "0"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/religious-site"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://example.org/tourism/nextStop": [
+      {
+        "@id": "https://example.org/tourism/attraction/andriivska-church"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Михайлівський монастир"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Релігійна пам'ятка"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/St.%20Michael%27s%20Golden-Domed%20Monastery.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4556"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5228"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.8"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/Country",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/kyiv-funicular",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Історична транспортна лінія, що з'єднує Поділ із Михайлівською площею у верхньому місті."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Київський фунікулер"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "1"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/historic-site"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Фунікулер"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Історична пам'ятка"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Funicular.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4593"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.525"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.6"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/type/park",
+    "@type": [
+      "https://example.org/tourism/AttractionType"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Парк"
       }
     ]
   },
@@ -521,14 +994,20 @@
     ]
   },
   {
-    "@id": "https://example.org/tourism/attraction/mariinskyi-park",
+    "@id": "https://example.org/tourism/attraction/mariinskyi-palace",
     "@type": [
       "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Бароковий палац XVIII століття, офіційна церемоніальна резиденція Президента України."
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "uk",
-        "@value": "Маріїнський парк"
+        "@value": "Маріїнський палац"
       }
     ],
     "https://example.org/tourism/entryPriceEUR": [
@@ -539,12 +1018,40 @@
     ],
     "https://example.org/tourism/hasAttractionType": [
       {
-        "@id": "https://example.org/tourism/type/park"
+        "@id": "https://example.org/tourism/type/historic-site"
       }
     ],
     "https://example.org/tourism/locatedInCity": [
       {
         "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://example.org/tourism/nextStop": [
+      {
+        "@id": "https://example.org/tourism/attraction/mariinskyi-park"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Історична пам'ятка"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Mariinskyi%20Palace%20in%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4484"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5375"
       }
     ],
     "https://schema.org/ratingValue": [
@@ -555,53 +1062,55 @@
     ]
   },
   {
-    "@id": "https://example.org/tourism/attraction/saint-sophia",
+    "@id": "https://example.org/tourism/City",
     "@type": [
-      "https://example.org/tourism/Attraction"
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/route/spiritual-kyiv",
+    "@type": [
+      "https://example.org/tourism/TouristRoute"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "uk",
-        "@value": "Софійський собор"
+        "@value": "Духовний Київ"
       }
     ],
-    "http://www.w3.org/2002/07/owl#sameAs": [
+    "https://example.org/tourism/includesAttraction": [
       {
-        "@id": "http://www.wikidata.org/entity/Q830054"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
+        "@id": "https://example.org/tourism/attraction/st-michaels-monastery"
+      },
       {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "12"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
+        "@id": "https://example.org/tourism/attraction/andriivska-church"
+      },
       {
-        "@id": "https://example.org/tourism/type/religious-site"
+        "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra"
       }
     ],
-    "https://example.org/tourism/locatedInCity": [
+    "https://example.org/tourism/recommendedSeason": [
       {
-        "@id": "https://example.org/tourism/city/kyiv"
+        "@value": "summer"
       }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/type/historic-site",
+    "@type": [
+      "https://example.org/tourism/AttractionType"
     ],
-    "https://example.org/tourism/nextStop": [
-      {
-        "@id": "https://example.org/tourism/attraction/golden-gate"
-      }
-    ],
-    "https://schema.org/description": [
+    "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "uk",
-        "@value": "Пам'ятка архітектури та монументального живопису XI століття"
+        "@value": "Історична пам'ятка"
       }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.8"
-      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/TouristRoute",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
     ]
   },
   {
@@ -633,20 +1142,43 @@
     ]
   },
   {
-    "@id": "https://example.org/tourism/attraction/mother-ukraine",
+    "@id": "https://example.org/tourism/type/monument",
     "@type": [
-      "https://example.org/tourism/Attraction"
+      "https://example.org/tourism/AttractionType"
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
         "@language": "uk",
-        "@value": "Батьківщина-Мати"
+        "@value": "Монумент"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/maidan",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Центральна площа Києва та важливий громадський простір новітньої історії України."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Майдан Незалежності"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q863759"
       }
     ],
     "https://example.org/tourism/entryPriceEUR": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "15"
+        "@value": "0"
       }
     ],
     "https://example.org/tourism/hasAttractionType": [
@@ -661,7 +1193,148 @@
     ],
     "https://example.org/tourism/nextStop": [
       {
+        "@id": "https://example.org/tourism/attraction/mariinskyi-palace"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Майдан"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Монумент"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Maidan%20Nezalezhnosti%20in%20Kyiv.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4501"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.5234"
+      }
+    ],
+    "https://schema.org/ratingValue": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "4.7"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/route/military-history",
+    "@type": [
+      "https://example.org/tourism/TouristRoute"
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Київ воєнно-історичний"
+      }
+    ],
+    "https://example.org/tourism/includesAttraction": [
+      {
+        "@id": "https://example.org/tourism/attraction/war-history-museum"
+      },
+      {
+        "@id": "https://example.org/tourism/attraction/mother-ukraine"
+      },
+      {
         "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra"
+      }
+    ],
+    "https://example.org/tourism/recommendedSeason": [
+      {
+        "@value": "autumn"
+      }
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/Attraction",
+    "@type": [
+      "http://www.w3.org/2000/01/rdf-schema#Class"
+    ]
+  },
+  {
+    "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra",
+    "@type": [
+      "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Історичний православний монастирський комплекс із печерами, храмами та музеями."
+      }
+    ],
+    "http://www.w3.org/2000/01/rdf-schema#label": [
+      {
+        "@language": "uk",
+        "@value": "Києво-Печерська лавра"
+      }
+    ],
+    "http://www.w3.org/2002/07/owl#sameAs": [
+      {
+        "@id": "http://www.wikidata.org/entity/Q242711"
+      }
+    ],
+    "https://example.org/tourism/entryPriceEUR": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "8"
+      }
+    ],
+    "https://example.org/tourism/hasAttractionType": [
+      {
+        "@id": "https://example.org/tourism/type/religious-site"
+      }
+    ],
+    "https://example.org/tourism/locatedInCity": [
+      {
+        "@id": "https://example.org/tourism/city/kyiv"
+      }
+    ],
+    "https://schema.org/alternateName": [
+      {
+        "@language": "uk",
+        "@value": "Київська лавра"
+      },
+      {
+        "@language": "uk",
+        "@value": "Лавра"
+      }
+    ],
+    "https://schema.org/category": [
+      {
+        "@language": "uk",
+        "@value": "Релігійна пам'ятка"
+      }
+    ],
+    "https://schema.org/image": [
+      {
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Pechersk%20Lavra.jpg"
+      }
+    ],
+    "https://schema.org/latitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "50.4346"
+      }
+    ],
+    "https://schema.org/longitude": [
+      {
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.559"
       }
     ],
     "https://schema.org/ratingValue": [
@@ -672,100 +1345,21 @@
     ]
   },
   {
-    "@id": "https://example.org/tourism/attraction/national-history-museum",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Національний музей історії України"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "6"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
-      {
-        "@id": "https://example.org/tourism/type/museum"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://example.org/tourism/nextStop": [
-      {
-        "@id": "https://example.org/tourism/attraction/landscape-alley"
-      }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.6"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/type/park",
-    "@type": [
-      "https://example.org/tourism/AttractionType"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Парк"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/Country",
+    "@id": "https://example.org/tourism/AttractionType",
     "@type": [
       "http://www.w3.org/2000/01/rdf-schema#Class"
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/attraction/kyiv-funicular",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Київський фунікулер"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "1"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
-      {
-        "@id": "https://example.org/tourism/type/historic-site"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.6"
-      }
     ]
   },
   {
     "@id": "https://example.org/tourism/attraction/war-history-museum",
     "@type": [
       "https://example.org/tourism/Attraction"
+    ],
+    "http://purl.org/dc/terms/description": [
+      {
+        "@language": "uk",
+        "@value": "Меморіально-музейний комплекс, присвячений досвіду України у Другій світовій війні."
+      }
     ],
     "http://www.w3.org/2000/01/rdf-schema#label": [
       {
@@ -794,122 +1388,33 @@
         "@id": "https://example.org/tourism/attraction/mother-ukraine"
       }
     ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.8"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/attraction/landscape-alley",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "https://schema.org/alternateName": [
       {
         "@language": "uk",
-        "@value": "Пейзажна алея"
+        "@value": "Національний музей історії України у Другій світовій війні"
       }
     ],
-    "https://example.org/tourism/entryPriceEUR": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "0"
-      }
-    ],
-    "https://example.org/tourism/hasAttractionType": [
-      {
-        "@id": "https://example.org/tourism/type/park"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://example.org/tourism/nextStop": [
-      {
-        "@id": "https://example.org/tourism/attraction/andriivska-church"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/mariinskyi-park"
-      }
-    ],
-    "https://schema.org/ratingValue": [
-      {
-        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "4.7"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/TouristRoute",
-    "@type": [
-      "http://www.w3.org/2000/01/rdf-schema#Class"
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/route/green-kyiv",
-    "@type": [
-      "https://example.org/tourism/TouristRoute"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
+    "https://schema.org/category": [
       {
         "@language": "uk",
-        "@value": "Зелений Київ"
+        "@value": "Музей"
       }
     ],
-    "https://example.org/tourism/includesAttraction": [
+    "https://schema.org/image": [
       {
-        "@id": "https://example.org/tourism/attraction/shevchenko-park"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/landscape-alley"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/mariinskyi-park"
+        "@id": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine%20in%20the%20Second%20World%20War.jpg"
       }
     ],
-    "https://example.org/tourism/recommendedSeason": [
-      {
-        "@value": "summer"
-      }
-    ]
-  },
-  {
-    "@id": "https://example.org/tourism/attraction/andriivska-church",
-    "@type": [
-      "https://example.org/tourism/Attraction"
-    ],
-    "http://www.w3.org/2000/01/rdf-schema#label": [
-      {
-        "@language": "uk",
-        "@value": "Андріївська церква"
-      }
-    ],
-    "https://example.org/tourism/entryPriceEUR": [
+    "https://schema.org/latitude": [
       {
         "@type": "http://www.w3.org/2001/XMLSchema#decimal",
-        "@value": "5"
+        "@value": "50.4268"
       }
     ],
-    "https://example.org/tourism/hasAttractionType": [
+    "https://schema.org/longitude": [
       {
-        "@id": "https://example.org/tourism/type/religious-site"
-      }
-    ],
-    "https://example.org/tourism/locatedInCity": [
-      {
-        "@id": "https://example.org/tourism/city/kyiv"
-      }
-    ],
-    "https://example.org/tourism/nextStop": [
-      {
-        "@id": "https://example.org/tourism/attraction/kyiv-pechersk-lavra"
-      },
-      {
-        "@id": "https://example.org/tourism/attraction/one-street-museum"
+        "@type": "http://www.w3.org/2001/XMLSchema#decimal",
+        "@value": "30.563"
       }
     ],
     "https://schema.org/ratingValue": [

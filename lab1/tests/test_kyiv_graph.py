@@ -7,7 +7,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
 from rdflib import OWL, RDF, URIRef, XSD
-from rdf_model import DATA, EX, QUERIES, load_kyiv_graph
+from rdflib.namespace import DCTERMS
+from rdf_model import DATA, EX, QUERIES, SCHEMA, load_kyiv_graph
 
 
 class TourismGraphTests(unittest.TestCase):
@@ -39,6 +40,17 @@ class TourismGraphTests(unittest.TestCase):
         links = list(self.graph.triples((None, OWL.sameAs, None)))
         self.assertGreaterEqual(len(links), 1)
         self.assertTrue(all(isinstance(obj, URIRef) for _, _, obj in links))
+
+    def test_attractions_have_application_fields(self):
+        attractions = set(self.graph.subjects(RDF.type, EX.Attraction))
+        self.assertTrue(attractions)
+        for attraction in attractions:
+            with self.subTest(attraction=attraction):
+                self.assertIsNotNone(self.graph.value(attraction, DCTERMS.description))
+                self.assertIsNotNone(self.graph.value(attraction, SCHEMA.latitude))
+                self.assertIsNotNone(self.graph.value(attraction, SCHEMA.longitude))
+                self.assertIsNotNone(self.graph.value(attraction, SCHEMA.image))
+                self.assertIsNotNone(self.graph.value(attraction, SCHEMA.category))
 
     def test_serialization_round_trip(self):
         from rdflib import Graph

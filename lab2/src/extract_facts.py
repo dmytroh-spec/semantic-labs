@@ -7,6 +7,7 @@ from config import DATA, LLM_BACKEND, ensure_directories
 from corpus import load_documents
 from llm_client import generate_json
 from models import FactCollection
+from entity_resolver import enrich_fact_ids
 
 
 def extract_with_llm() -> FactCollection:
@@ -41,6 +42,7 @@ def extract_facts() -> FactCollection:
         collection = FactCollection.model_validate(payload)
     else:
         collection = extract_with_llm()
+    collection = enrich_fact_ids(collection)
     (DATA / "facts.json").write_text(
         collection.model_dump_json(indent=2), encoding="utf-8")
 

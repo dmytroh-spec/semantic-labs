@@ -80,6 +80,13 @@ def build_kyiv_graph() -> Graph:
         # str() preserves an exact decimal lexical form instead of a binary float.
         graph.add((uri, SCHEMA.ratingValue, Literal(str(item["rating"]), datatype=XSD.decimal)))
         graph.add((uri, EX.entryPriceEUR, Literal(str(item["price"]), datatype=XSD.decimal)))
+        graph.add((uri, DCTERMS.description, Literal(item["description"], lang="uk")))
+        graph.add((uri, SCHEMA.latitude, Literal(str(item["latitude"]), datatype=XSD.decimal)))
+        graph.add((uri, SCHEMA.longitude, Literal(str(item["longitude"]), datatype=XSD.decimal)))
+        graph.add((uri, SCHEMA.image, URIRef(item["image"])))
+        graph.add((uri, SCHEMA.category, Literal(item["category"], lang="uk")))
+        for alias in item.get("aliases", []):
+            graph.add((uri, SCHEMA.alternateName, Literal(alias, lang="uk")))
         if item.get("wikidata"):
             graph.add((uri, OWL.sameAs, URIRef(item["wikidata"])))
 

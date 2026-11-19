@@ -27,10 +27,12 @@ def load_facts() -> FactCollection:
 def build_graph() -> nx.DiGraph:
     graph = nx.DiGraph()
     for fact in load_facts().facts:
-        graph.add_node(fact.subject, entity_type=fact.subject_type)
-        graph.add_node(fact.object, entity_type=fact.object_type)
+        subject_id = fact.subject_id or fact.subject
+        object_id = fact.object_id or fact.object
+        graph.add_node(subject_id, label=fact.subject, entity_type=fact.subject_type)
+        graph.add_node(object_id, label=fact.object, entity_type=fact.object_type)
         # A DiGraph keeps the main relation readable; source IDs preserve provenance.
-        graph.add_edge(fact.subject, fact.object, relation=fact.relation,
+        graph.add_edge(subject_id, object_id, relation=fact.relation,
                        fact_id=fact.id, source=fact.source_doc)
     return graph
 
@@ -57,7 +59,8 @@ def visualize(graph: nx.DiGraph) -> None:
     nx.draw_networkx_nodes(graph, position, node_color=colors, node_size=950,
                            edgecolors="#455a64", linewidths=0.7)
     nx.draw_networkx_edges(graph, position, alpha=0.35, arrowsize=12)
-    nx.draw_networkx_labels(graph, position, font_size=6)
+    labels = {node: data.get("label", node) for node, data in graph.nodes(data=True)}
+    nx.draw_networkx_labels(graph, position, labels=labels, font_size=6)
     plt.title("Kyiv tourism knowledge graph", fontsize=17)
     plt.axis("off")
     plt.tight_layout()

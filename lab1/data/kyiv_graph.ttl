@@ -63,45 +63,75 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/maidan> a tour:Attraction ;
     rdfs:label "Майдан Незалежності"@uk ;
+    dcterms:description "Центральна площа Києва та важливий громадський простір новітньої історії України."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q863759> ;
     tour:entryPriceEUR 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/monument> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/mariinskyi-palace> ;
+    schema:alternateName "Майдан"@uk ;
+    schema:category "Монумент"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Maidan%20Nezalezhnosti%20in%20Kyiv.jpg> ;
+    schema:latitude 50.4501 ;
+    schema:longitude 30.5234 ;
     schema:ratingValue 4.7 .
 
 <https://example.org/tourism/attraction/saint-sophia> a tour:Attraction ;
     rdfs:label "Софійський собор"@uk ;
+    dcterms:description "Пам'ятка архітектури XI століття та осередок монументального мистецтва княжого Києва."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q830054> ;
     tour:entryPriceEUR 12.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/golden-gate> ;
+    schema:alternateName "Софія Київська"@uk ;
+    schema:category "Релігійна пам'ятка"@uk ;
     schema:description "Пам'ятка архітектури та монументального живопису XI століття"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Sophia%20Cathedral%20in%20Kyiv.jpg> ;
+    schema:latitude 50.4529 ;
+    schema:longitude 30.5143 ;
     schema:ratingValue 4.8 .
 
 <https://example.org/tourism/attraction/shevchenko-park> a tour:Attraction ;
     rdfs:label "Парк імені Тараса Шевченка"@uk ;
+    dcterms:description "Центральний міський парк навпроти університету з пам'ятником Тарасові Шевченку."@uk ;
     tour:entryPriceEUR 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/park> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/landscape-alley> ;
+    schema:alternateName "Парк Шевченка"@uk ;
+    schema:category "Парк"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Taras%20Shevchenko%20Park%20Kyiv.jpg> ;
+    schema:latitude 50.4412 ;
+    schema:longitude 30.5119 ;
     schema:ratingValue 4.7 .
 
 <https://example.org/tourism/attraction/st-michaels-monastery> a tour:Attraction ;
     rdfs:label "Михайлівський Золотоверхий монастир"@uk ;
+    dcterms:description "Православний монастир у центрі Києва, відомий золотоверхим собором і мозаїками."@uk ;
     tour:entryPriceEUR 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/andriivska-church> ;
+    schema:alternateName "Михайлівський монастир"@uk ;
+    schema:category "Релігійна пам'ятка"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/St.%20Michael%27s%20Golden-Domed%20Monastery.jpg> ;
+    schema:latitude 50.4556 ;
+    schema:longitude 30.5228 ;
     schema:ratingValue 4.8 .
 
 <https://example.org/tourism/attraction/war-history-museum> a tour:Attraction ;
     rdfs:label "Музей історії України у Другій світовій війні"@uk ;
+    dcterms:description "Меморіально-музейний комплекс, присвячений досвіду України у Другій світовій війні."@uk ;
     tour:entryPriceEUR 7.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/museum> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/mother-ukraine> ;
+    schema:alternateName "Національний музей історії України у Другій світовій війні"@uk ;
+    schema:category "Музей"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine%20in%20the%20Second%20World%20War.jpg> ;
+    schema:latitude 50.4268 ;
+    schema:longitude 30.563 ;
     schema:ratingValue 4.8 .
 
 <https://example.org/tourism/country/ukraine> a tour:Country ;
@@ -110,42 +140,70 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/golden-gate> a tour:Attraction ;
     rdfs:label "Золоті ворота"@uk ;
+    dcterms:description "Реконструйована головна брама середньовічного Києва, споруджена за князя Ярослава Мудрого."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q4289171> ;
     tour:entryPriceEUR 5.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/national-history-museum> ;
+    schema:alternateName "Золоті ворота Києва"@uk ;
+    schema:category "Історична пам'ятка"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Gate%20in%20Kyiv.jpg> ;
+    schema:latitude 50.4488 ;
+    schema:longitude 30.5133 ;
     schema:ratingValue 4.7 .
 
 <https://example.org/tourism/attraction/kyiv-funicular> a tour:Attraction ;
     rdfs:label "Київський фунікулер"@uk ;
+    dcterms:description "Історична транспортна лінія, що з'єднує Поділ із Михайлівською площею у верхньому місті."@uk ;
     tour:entryPriceEUR 1.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    schema:alternateName "Фунікулер"@uk ;
+    schema:category "Історична пам'ятка"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Funicular.jpg> ;
+    schema:latitude 50.4593 ;
+    schema:longitude 30.525 ;
     schema:ratingValue 4.6 .
 
 <https://example.org/tourism/attraction/mariinskyi-palace> a tour:Attraction ;
     rdfs:label "Маріїнський палац"@uk ;
+    dcterms:description "Бароковий палац XVIII століття, офіційна церемоніальна резиденція Президента України."@uk ;
     tour:entryPriceEUR 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/mariinskyi-park> ;
+    schema:category "Історична пам'ятка"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Mariinskyi%20Palace%20in%20Kyiv.jpg> ;
+    schema:latitude 50.4484 ;
+    schema:longitude 30.5375 ;
     schema:ratingValue 4.7 .
 
 <https://example.org/tourism/attraction/mother-ukraine> a tour:Attraction ;
     rdfs:label "Батьківщина-Мати"@uk ;
+    dcterms:description "Монументальна скульптура та домінанта меморіального комплексу Національного музею історії України у Другій світовій війні."@uk ;
     tour:entryPriceEUR 15.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/monument> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/kyiv-pechersk-lavra> ;
+    schema:alternateName "Монумент Батьківщина-Мати"@uk ;
+    schema:category "Монумент"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Mother%20Ukraine%20Kyiv.jpg> ;
+    schema:latitude 50.4265 ;
+    schema:longitude 30.5631 ;
     schema:ratingValue 4.8 .
 
 <https://example.org/tourism/attraction/one-street-museum> a tour:Attraction ;
     rdfs:label "Музей однієї вулиці"@uk ;
+    dcterms:description "Музей історії Андріївського узвозу, його будинків, мешканців і культурного життя."@uk ;
     tour:entryPriceEUR 5.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/museum> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/kyiv-funicular> ;
+    schema:category "Музей"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/One%20Street%20Museum%20Kyiv.jpg> ;
+    schema:latitude 50.4611 ;
+    schema:longitude 30.5177 ;
     schema:ratingValue 4.7 .
 
 <https://example.org/tourism/type/monument> a tour:AttractionType ;
@@ -153,10 +211,16 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/national-history-museum> a tour:Attraction ;
     rdfs:label "Національний музей історії України"@uk ;
+    dcterms:description "Музейна колекція, що представляє історію України від давнини до сучасності."@uk ;
     tour:entryPriceEUR 6.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/museum> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/landscape-alley> ;
+    schema:alternateName "Музей історії України"@uk ;
+    schema:category "Музей"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine.jpg> ;
+    schema:latitude 50.4584 ;
+    schema:longitude 30.5151 ;
     schema:ratingValue 4.6 .
 
 <https://example.org/tourism/type/historic-site> a tour:AttractionType ;
@@ -170,35 +234,58 @@ tour:TouristRoute a rdfs:Class .
 
 <https://example.org/tourism/attraction/andriivska-church> a tour:Attraction ;
     rdfs:label "Андріївська церква"@uk ;
+    dcterms:description "Барокова церква XVIII століття за проєктом Бартоломео Растреллі над Андріївським узвозом."@uk ;
     tour:entryPriceEUR 5.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/kyiv-pechersk-lavra>,
         <https://example.org/tourism/attraction/one-street-museum> ;
+    schema:alternateName "Андріївська церква в Києві"@uk ;
+    schema:category "Релігійна пам'ятка"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/St%20Andrew%27s%20Church%20Kyiv.jpg> ;
+    schema:latitude 50.459 ;
+    schema:longitude 30.5177 ;
     schema:ratingValue 4.8 .
 
 <https://example.org/tourism/attraction/kyiv-pechersk-lavra> a tour:Attraction ;
     rdfs:label "Києво-Печерська лавра"@uk ;
+    dcterms:description "Історичний православний монастирський комплекс із печерами, храмами та музеями."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q242711> ;
     tour:entryPriceEUR 8.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    schema:alternateName "Київська лавра"@uk,
+        "Лавра"@uk ;
+    schema:category "Релігійна пам'ятка"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Pechersk%20Lavra.jpg> ;
+    schema:latitude 50.4346 ;
+    schema:longitude 30.559 ;
     schema:ratingValue 4.8 .
 
 <https://example.org/tourism/attraction/landscape-alley> a tour:Attraction ;
     rdfs:label "Пейзажна алея"@uk ;
+    dcterms:description "Прогулянкова алея зі скульптурами, дитячими майданчиками та панорамами старого Києва."@uk ;
     tour:entryPriceEUR 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/park> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/andriivska-church>,
         <https://example.org/tourism/attraction/mariinskyi-park> ;
+    schema:category "Парк"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Landscape%20Alley%20Kyiv.jpg> ;
+    schema:latitude 50.4577 ;
+    schema:longitude 30.5106 ;
     schema:ratingValue 4.7 .
 
 <https://example.org/tourism/attraction/mariinskyi-park> a tour:Attraction ;
     rdfs:label "Маріїнський парк"@uk ;
+    dcterms:description "Історичний парк біля Маріїнського палацу з прогулянковими алеями та видами на Дніпро."@uk ;
     tour:entryPriceEUR 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/park> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
+    schema:category "Парк"@uk ;
+    schema:image <https://commons.wikimedia.org/wiki/Special:FilePath/Mariinskyi%20Park%20Kyiv.jpg> ;
+    schema:latitude 50.4473 ;
+    schema:longitude 30.5402 ;
     schema:ratingValue 4.7 .
 
 <https://example.org/tourism/type/religious-site> a tour:AttractionType ;
