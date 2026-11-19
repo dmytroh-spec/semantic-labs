@@ -1,7 +1,11 @@
 """FastAPI entry point for the Kyiv Semantic Guide."""
 
+from pathlib import Path
+
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 from app.repository import get_attraction, list_attractions, list_routes, load_data
 
@@ -16,6 +20,15 @@ app.add_middleware(
     allow_methods=["GET"],
     allow_headers=["*"],
 )
+STATIC = Path(__file__).resolve().parent / "static"
+app.mount("/static", StaticFiles(directory=STATIC), name="static")
+
+
+@app.get("/", include_in_schema=False)
+def index() -> FileResponse:
+    return FileResponse(STATIC / "index.html")
+
+
 @app.get("/api/health", tags=["system"])
 def health() -> dict:
     data = load_data()

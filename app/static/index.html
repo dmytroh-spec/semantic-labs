@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Семантичний гід туристичними місцями Києва">
+  <title>Київ поруч — семантичний гід</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="На початок сторінки">
+      <span class="brand-mark">К</span>
+      <span>Київ поруч</span>
+    </a>
+    <nav aria-label="Головна навігація">
+      <a href="#places">Місця</a>
+      <a href="#routes">Маршрути</a>
+      <a href="/docs">API</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Семантичний гід Києвом</p>
+        <h1>Місто, яке можна <span>прочитати</span></h1>
+        <p class="hero-text">Шукайте не лише за назвою. Запитайте про князів, мозаїки, парки чи новітню історію — граф знань підкаже пов’язані місця.</p>
+        <form class="search" id="search-form" role="search">
+          <label class="sr-only" for="search-input">Пошук туристичних місць</label>
+          <input id="search-input" type="search" minlength="2" placeholder="Наприклад: Ярослав Мудрий" autocomplete="off">
+          <button type="submit">Знайти</button>
+        </form>
+        <div class="quick-search" aria-label="Приклади пошуку">
+          <button data-query="панорама Дніпра">Панорама Дніпра</button>
+          <button data-query="релігійний маршрут">Релігійний маршрут</button>
+          <button data-query="сучасні скульптури">Сучасні скульптури</button>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="Інформація про проєкт">
+        <div class="orb"></div>
+        <p>Відкриті пов’язані дані</p>
+        <strong id="hero-count">15 місць</strong>
+        <span>RDF · Wikidata · GraphRAG</span>
+      </aside>
+    </section>
+
+    <section class="catalog" id="places">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Каталог</p>
+          <h2>Виберіть свій Київ</h2>
+        </div>
+        <p id="result-count" aria-live="polite">Завантаження…</p>
+      </div>
+      <div class="filters" id="filters" aria-label="Фільтри каталогу">
+        <button class="active" data-category="">Усі</button>
+      </div>
+      <div class="places-grid" id="places-grid" aria-live="polite"></div>
+      <div class="empty" id="empty-state" hidden>
+        <h3>Нічого не знайшли</h3>
+        <p>Спробуйте коротший запит або іншу категорію.</p>
+        <button id="reset-search">Скинути фільтри</button>
+      </div>
+    </section>
+
+    <section class="routes" id="routes">
+      <div class="section-heading light">
+        <div>
+          <p class="eyebrow">Готові прогулянки</p>
+          <h2>Маршрут уже на карті</h2>
+        </div>
+        <p>Оберіть тему — ми покажемо порядок зупинок.</p>
+      </div>
+      <div class="route-layout">
+        <div class="route-list" id="route-list"></div>
+        <div id="map" aria-label="Карта туристичного маршруту"></div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="place-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" aria-label="Закрити">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <footer>
+    <span>Київ поруч</span>
+    <p>Навчальний проєкт на основі відкритих семантичних даних.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

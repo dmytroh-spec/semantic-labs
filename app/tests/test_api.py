@@ -18,6 +18,12 @@ class ApiTests(unittest.TestCase):
         self.assertEqual(response.json()["attractions"], 15)
         self.assertEqual(response.json()["facts"], 40)
 
+    def test_home_page_and_assets_are_served(self):
+        response = self.client.get("/")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("Київ поруч", response.text)
+        self.assertEqual(self.client.get("/static/app.js").status_code, 200)
+
     def test_catalog_filters_and_semantic_text_search(self):
         free = self.client.get("/api/attractions", params={"free_only": "true"}).json()
         self.assertTrue(free["items"])

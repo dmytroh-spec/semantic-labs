@@ -10,6 +10,7 @@ python -m uvicorn app.main:app --reload
 ```
 
 Документація OpenAPI: `http://127.0.0.1:8000/docs`.
+Вебінтерфейс: `http://127.0.0.1:8000/`.
 
 ## Методи
 
