@@ -223,3 +223,8 @@ __marimo__/
 .streamlit/secrets.toml
 .deps/
 .matplotlib/
+
+# Local generated artifacts
+/.codex-finalizer/
+/output/
+/tmp/

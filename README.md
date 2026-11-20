@@ -1,9 +1,95 @@
-# Semantic Web laboratory works
+# Kyiv Semantic Guide
 
-- `lab1/` — Kyiv Tourism RDF and SPARQL.
-- `lab2/` — knowledge extraction and semantic search.
-- `integration/` — об'єднання RDF-каталогу й семантичних фактів за спільними ID.
-- `data/unified_kyiv_tourism.json` — готовий для застосунку спільний набір даних.
-- `app/` — REST API каталогу, пошуку та туристичних маршрутів.
+Навчальний проєкт із Semantic Web, який об'єднує дві лабораторні роботи в один
+вебзастосунок для пошуку туристичних місць і маршрутів Києва.
 
-Each laboratory contains its own source code, data, outputs, dependencies, and instructions.
+Перша лабораторна формує RDF-модель туристичних об'єктів і маршрутів. Друга
+виділяє семантичні факти, будує граф знань і реалізує семантичний пошук. Модуль
+інтеграції поєднує результати за стабільними ідентифікаторами, а FastAPI та
+вебінтерфейс надають доступ до спільного набору даних.
+
+## Можливості
+
+- каталог із 15 туристичних місць Києва;
+- пошук за назвою, описом, псевдонімами та семантичними фактами;
+- фільтрація за категорією, рейтингом і безплатним входом;
+- детальні сторінки місць із координатами та пов'язаними фактами;
+- 6 тематичних маршрутів із відстанню, тривалістю та картою;
+- REST API й автоматична документація OpenAPI;
+- локальна робота без обов'язкового доступу до Wikidata.
+
+## Структура репозиторію
+
+```text
+lab1/          RDF, SPARQL, JSON-LD та зв'язки з Wikidata
+lab2/          виділення фактів, граф знань і GraphRAG
+integration/   об'єднання даних двох лабораторних
+data/          спільний набір даних застосунку
+app/           FastAPI, REST API та вебінтерфейс
+```
+
+Канонічний ідентифікатор туристичного місця має формат
+`attraction/<slug>`. Назви та псевдоніми використовуються для пошуку, але не як
+ідентифікатори.
+
+## Швидкий запуск
+
+Команди виконуються з кореня репозиторію.
+
+```powershell
+python -m pip install -r app/requirements.txt
+python -m uvicorn app.main:app --reload
+```
+
+Після запуску доступні:
+
+- вебзастосунок: `http://127.0.0.1:8000/`;
+- документація API: `http://127.0.0.1:8000/docs`;
+- перевірка стану: `http://127.0.0.1:8000/api/health`.
+
+## Оновлення спільного набору даних
+
+Якщо змінено дані лабораторних, спільний файл можна перебудувати:
+
+```powershell
+python -m pip install -r lab1/requirements.txt
+python -m pip install -r lab2/requirements.txt
+python integration/build_unified_data.py
+```
+
+Результат записується в `data/unified_kyiv_tourism.json`. Він містить валюту,
+категорії, туристичні місця, маршрути та семантичні факти.
+
+## REST API
+
+| Метод | Шлях | Призначення |
+| --- | --- | --- |
+| `GET` | `/api/health` | Стан застосунку та кількість сутностей |
+| `GET` | `/api/categories` | Перелік категорій |
+| `GET` | `/api/attractions` | Каталог, пошук і фільтрація |
+| `GET` | `/api/attractions/{id}` | Деталі місця та семантичні факти |
+| `GET` | `/api/routes` | Перелік маршрутів із розрахованими показниками |
+| `GET` | `/api/routes/{id}` | Деталі окремого маршруту |
+
+Параметри `/api/attractions`: `q`, `category`, `free_only`, `min_rating`.
+
+## Тестування
+
+Повна перевірка проєкту:
+
+```powershell
+python -m unittest discover -s lab1/tests -v
+python -m unittest discover -s lab2/tests -v
+python -m unittest discover -s integration -p "test_*.py" -v
+python -m unittest discover -s app/tests -v
+```
+
+Набір тестів перевіряє RDF-модель, SPARQL, семантичні факти, інтеграцію даних,
+пошук, фільтри, маршрути, REST API та відповіді `404`.
+
+## Документація модулів
+
+- [Лабораторна 1](lab1/README.md)
+- [Лабораторна 2](lab2/README.md)
+- [Інтеграція даних](integration/README.md)
+- [Вебзастосунок і API](app/README.md)

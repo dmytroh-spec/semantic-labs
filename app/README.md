@@ -18,6 +18,13 @@ python -m uvicorn app.main:app --reload
 - `GET /api/categories` — категорії;
 - `GET /api/attractions` — каталог, пошук та фільтри;
 - `GET /api/attractions/{id}` — детальна інформація і семантичні факти;
-- `GET /api/routes` — маршрути з координатами впорядкованих зупинок.
+- `GET /api/routes` — маршрути з координатами впорядкованих зупинок;
+- `GET /api/routes/{id}` — детальна інформація про маршрут, відстань і тривалість.
 
 Параметри каталогу: `q`, `category`, `free_only`, `min_rating`.
+
+## Тестування
+
+```powershell
+python -m unittest discover -s app/tests -v
+```
