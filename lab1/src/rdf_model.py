@@ -79,7 +79,7 @@ def build_kyiv_graph() -> Graph:
         graph.add((uri, EX.hasAttractionType, make_resource_uri("type", item["type"])))
         # str() preserves an exact decimal lexical form instead of a binary float.
         graph.add((uri, SCHEMA.ratingValue, Literal(str(item["rating"]), datatype=XSD.decimal)))
-        graph.add((uri, EX.entryPriceEUR, Literal(str(item["price"]), datatype=XSD.decimal)))
+        graph.add((uri, EX.entryPriceUAH, Literal(str(item["price"]), datatype=XSD.decimal)))
         graph.add((uri, DCTERMS.description, Literal(item["description"], lang="uk")))
         graph.add((uri, SCHEMA.latitude, Literal(str(item["latitude"]), datatype=XSD.decimal)))
         graph.add((uri, SCHEMA.longitude, Literal(str(item["longitude"]), datatype=XSD.decimal)))

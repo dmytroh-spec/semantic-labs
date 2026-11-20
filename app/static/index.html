@@ -60,6 +60,20 @@
       <div class="filters" id="filters" aria-label="Фільтри каталогу">
         <button class="active" data-category="">Усі</button>
       </div>
+      <div class="advanced-filters" aria-label="Додаткові фільтри">
+        <label class="toggle"><input id="free-only" type="checkbox"><span>Тільки безкоштовні</span></label>
+        <label class="rating-filter" for="min-rating">
+          Мінімальний рейтинг
+          <select id="min-rating">
+            <option value="">Будь-який</option>
+            <option value="4.6">4.6+</option>
+            <option value="4.7">4.7+</option>
+            <option value="4.8">4.8</option>
+          </select>
+        </label>
+        <button class="clear-filters" id="clear-filters" type="button">Очистити</button>
+      </div>
+      <p class="price-note">Ціни наведено у гривнях орієнтовно. Перевіряйте актуальний тариф перед відвідуванням.</p>
       <div class="places-grid" id="places-grid" aria-live="polite"></div>
       <div class="empty" id="empty-state" hidden>
         <h3>Нічого не знайшли</h3>
@@ -77,8 +91,17 @@
         <p>Оберіть тему — ми покажемо порядок зупинок.</p>
       </div>
       <div class="route-layout">
-        <div class="route-list" id="route-list"></div>
-        <div id="map" aria-label="Карта туристичного маршруту"></div>
+        <div>
+          <div class="route-list" id="route-list"></div>
+          <article class="route-detail" id="route-detail" aria-live="polite"></article>
+        </div>
+        <div class="map-shell">
+          <div id="map" aria-label="Карта туристичного маршруту"></div>
+          <div class="map-fallback" id="map-fallback" hidden>
+            <strong>Карта недоступна</strong>
+            <p>Маршрут і порядок зупинок залишаються доступними ліворуч.</p>
+          </div>
+        </div>
       </div>
     </section>
   </main>

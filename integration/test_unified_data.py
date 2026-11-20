@@ -13,6 +13,7 @@ from build_unified_data import build
 class UnifiedDataTests(unittest.TestCase):
     def test_all_catalog_attractions_are_complete(self):
         payload = build()
+        self.assertEqual(payload["currency"], "UAH")
         required = {"entity_id", "category", "description", "latitude", "longitude", "image"}
         self.assertGreaterEqual(len(payload["attractions"]), 15)
         for attraction in payload["attractions"]:

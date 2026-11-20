@@ -34,6 +34,11 @@ class ApiTests(unittest.TestCase):
         self.assertIn("saint-sophia", ids)
         self.assertIn("golden-gate", ids)
 
+        rated = self.client.get("/api/attractions", params={"min_rating": 4.8}).json()
+        self.assertTrue(rated["items"])
+        self.assertTrue(all(item["rating"] >= 4.8 for item in rated["items"]))
+        self.assertTrue(all(item["price"] == 0 or item["price"] >= 40 for item in rated["items"]))
+
     def test_attraction_detail_and_404(self):
         response = self.client.get("/api/attractions/saint-sophia")
         self.assertEqual(response.status_code, 200)
@@ -47,6 +52,14 @@ class ApiTests(unittest.TestCase):
             positions = [stop["position"] for stop in route["stops"]]
             self.assertEqual(positions, list(range(1, len(positions) + 1)))
             self.assertTrue(all("latitude" in stop and "longitude" in stop for stop in route["stops"]))
+            self.assertGreater(route["distance_km"], 0)
+            self.assertGreater(route["duration_minutes"], 0)
+
+    def test_route_detail_and_404(self):
+        response = self.client.get("/api/routes/ancient-kyiv")
+        self.assertEqual(response.status_code, 200)
+        self.assertIn("duration_label", response.json())
+        self.assertEqual(self.client.get("/api/routes/unknown").status_code, 404)
 
 
 if __name__ == "__main__":

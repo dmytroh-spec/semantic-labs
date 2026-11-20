@@ -34,6 +34,8 @@ def build() -> dict:
 
     return {
         "schema_version": "1.0",
+        "currency": catalog["currency"],
+        "price_note": catalog["priceNote"],
         "countries": catalog["countries"],
         "cities": catalog["cities"],
         "categories": catalog["types"],

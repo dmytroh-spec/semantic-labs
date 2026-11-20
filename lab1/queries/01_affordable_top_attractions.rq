@@ -8,8 +8,8 @@ SELECT ?name ?rating ?price WHERE {
   ?item a tour:Attraction ;
         rdfs:label ?name ;
         schema:ratingValue ?rating ;
-        tour:entryPriceEUR ?price .
-  FILTER(?rating >= 4.7 && ?price <= 15)
+        tour:entryPriceUAH ?price .
+  FILTER(?rating >= 4.7 && ?price <= 600)
 }
 ORDER BY DESC(?rating) ?price ?name
 

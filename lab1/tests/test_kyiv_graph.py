@@ -32,7 +32,7 @@ class TourismGraphTests(unittest.TestCase):
         self.assertGreaterEqual(len(instances), 20)
 
     def test_prices_are_numeric(self):
-        prices = list(self.graph.objects(None, EX.entryPriceEUR))
+        prices = list(self.graph.objects(None, EX.entryPriceUAH))
         self.assertTrue(prices)
         self.assertTrue(all(price.datatype == XSD.decimal for price in prices))
 

@@ -1,6 +1,7 @@
 """Read-only access and search over the unified tourism dataset."""
 
 import json
+import math
 import re
 from functools import lru_cache
 from pathlib import Path
@@ -66,10 +67,9 @@ def get_attraction(attraction_id: str) -> dict | None:
 def list_routes() -> list[dict]:
     data = load_data()
     attractions = {item["id"]: item for item in data["attractions"]}
-    return [
-        {
-            **route,
-            "stops": [
+    routes = []
+    for route in data["routes"]:
+        stops = [
                 {
                     "position": position,
                     "id": stop_id,
@@ -79,7 +79,47 @@ def list_routes() -> list[dict]:
                     "longitude": attractions[stop_id]["longitude"],
                 }
                 for position, stop_id in enumerate(route["stops"], start=1)
-            ],
-        }
-        for route in data["routes"]
-    ]
+            ]
+        segments = []
+        total_distance = 0.0
+        for start, end in zip(stops, stops[1:]):
+            distance = _haversine_km(
+                start["latitude"], start["longitude"],
+                end["latitude"], end["longitude"],
+            )
+            total_distance += distance
+            segments.append({
+                "from": start["id"], "to": end["id"],
+                "distance_km": round(distance, 2),
+            })
+        duration_minutes = round(total_distance / 4.5 * 60 + len(stops) * 20)
+        routes.append({
+            **route,
+            "stops": stops,
+            "segments": segments,
+            "distance_km": round(total_distance, 1),
+            "duration_minutes": duration_minutes,
+            "duration_label": _duration_label(duration_minutes),
+        })
+    return routes
+
+
+def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    radius = 6371.0
+    phi1, phi2 = math.radians(lat1), math.radians(lat2)
+    delta_phi = math.radians(lat2 - lat1)
+    delta_lambda = math.radians(lon2 - lon1)
+    value = (math.sin(delta_phi / 2) ** 2
+             + math.cos(phi1) * math.cos(phi2) * math.sin(delta_lambda / 2) ** 2)
+    return radius * 2 * math.atan2(math.sqrt(value), math.sqrt(1 - value))
+
+
+def _duration_label(minutes: int) -> str:
+    hours, rest = divmod(minutes, 60)
+    if not hours:
+        return f"{rest} хв"
+    return f"{hours} год {rest} хв" if rest else f"{hours} год"
+
+
+def get_route(route_id: str) -> dict | None:
+    return next((route for route in list_routes() if route["id"] == route_id), None)

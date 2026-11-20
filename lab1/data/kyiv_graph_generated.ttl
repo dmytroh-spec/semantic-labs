@@ -63,7 +63,7 @@ tour:TouristRoute a rdfs:Class .
     rdfs:label "Майдан Незалежності"@uk ;
     dcterms:description "Центральна площа Києва та важливий громадський простір новітньої історії України."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q863759> ;
-    tour:entryPriceEUR 0.0 ;
+    tour:entryPriceUAH 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/monument> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/mariinskyi-palace> ;
@@ -78,7 +78,7 @@ tour:TouristRoute a rdfs:Class .
     rdfs:label "Софійський собор"@uk ;
     dcterms:description "Пам'ятка архітектури XI століття та осередок монументального мистецтва княжого Києва."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q830054> ;
-    tour:entryPriceEUR 12.0 ;
+    tour:entryPriceUAH 480.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/golden-gate> ;
@@ -92,7 +92,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/shevchenko-park> a tour:Attraction ;
     rdfs:label "Парк імені Тараса Шевченка"@uk ;
     dcterms:description "Центральний міський парк навпроти університету з пам'ятником Тарасові Шевченку."@uk ;
-    tour:entryPriceEUR 0.0 ;
+    tour:entryPriceUAH 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/park> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/landscape-alley> ;
@@ -106,7 +106,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/st-michaels-monastery> a tour:Attraction ;
     rdfs:label "Михайлівський Золотоверхий монастир"@uk ;
     dcterms:description "Православний монастир у центрі Києва, відомий золотоверхим собором і мозаїками."@uk ;
-    tour:entryPriceEUR 0.0 ;
+    tour:entryPriceUAH 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/andriivska-church> ;
@@ -120,7 +120,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/war-history-museum> a tour:Attraction ;
     rdfs:label "Музей історії України у Другій світовій війні"@uk ;
     dcterms:description "Меморіально-музейний комплекс, присвячений досвіду України у Другій світовій війні."@uk ;
-    tour:entryPriceEUR 7.0 ;
+    tour:entryPriceUAH 280.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/museum> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/mother-ukraine> ;
@@ -139,7 +139,7 @@ tour:TouristRoute a rdfs:Class .
     rdfs:label "Золоті ворота"@uk ;
     dcterms:description "Реконструйована головна брама середньовічного Києва, споруджена за князя Ярослава Мудрого."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q4289171> ;
-    tour:entryPriceEUR 5.0 ;
+    tour:entryPriceUAH 200.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/national-history-museum> ;
@@ -153,7 +153,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/kyiv-funicular> a tour:Attraction ;
     rdfs:label "Київський фунікулер"@uk ;
     dcterms:description "Історична транспортна лінія, що з'єднує Поділ із Михайлівською площею у верхньому місті."@uk ;
-    tour:entryPriceEUR 1.0 ;
+    tour:entryPriceUAH 40.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     schema:alternateName "Фунікулер"@uk ;
@@ -166,7 +166,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/mariinskyi-palace> a tour:Attraction ;
     rdfs:label "Маріїнський палац"@uk ;
     dcterms:description "Бароковий палац XVIII століття, офіційна церемоніальна резиденція Президента України."@uk ;
-    tour:entryPriceEUR 0.0 ;
+    tour:entryPriceUAH 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/historic-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/mariinskyi-park> ;
@@ -179,7 +179,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/mother-ukraine> a tour:Attraction ;
     rdfs:label "Батьківщина-Мати"@uk ;
     dcterms:description "Монументальна скульптура та домінанта меморіального комплексу Національного музею історії України у Другій світовій війні."@uk ;
-    tour:entryPriceEUR 15.0 ;
+    tour:entryPriceUAH 600.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/monument> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/kyiv-pechersk-lavra> ;
@@ -193,7 +193,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/one-street-museum> a tour:Attraction ;
     rdfs:label "Музей однієї вулиці"@uk ;
     dcterms:description "Музей історії Андріївського узвозу, його будинків, мешканців і культурного життя."@uk ;
-    tour:entryPriceEUR 5.0 ;
+    tour:entryPriceUAH 200.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/museum> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/kyiv-funicular> ;
@@ -209,7 +209,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/national-history-museum> a tour:Attraction ;
     rdfs:label "Національний музей історії України"@uk ;
     dcterms:description "Музейна колекція, що представляє історію України від давнини до сучасності."@uk ;
-    tour:entryPriceEUR 6.0 ;
+    tour:entryPriceUAH 240.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/museum> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/landscape-alley> ;
@@ -232,7 +232,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/andriivska-church> a tour:Attraction ;
     rdfs:label "Андріївська церква"@uk ;
     dcterms:description "Барокова церква XVIII століття за проєктом Бартоломео Растреллі над Андріївським узвозом."@uk ;
-    tour:entryPriceEUR 5.0 ;
+    tour:entryPriceUAH 200.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/kyiv-pechersk-lavra>,
@@ -248,7 +248,7 @@ tour:TouristRoute a rdfs:Class .
     rdfs:label "Києво-Печерська лавра"@uk ;
     dcterms:description "Історичний православний монастирський комплекс із печерами, храмами та музеями."@uk ;
     owl:sameAs <http://www.wikidata.org/entity/Q242711> ;
-    tour:entryPriceEUR 8.0 ;
+    tour:entryPriceUAH 320.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/religious-site> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     schema:alternateName "Київська лавра"@uk,
@@ -262,7 +262,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/landscape-alley> a tour:Attraction ;
     rdfs:label "Пейзажна алея"@uk ;
     dcterms:description "Прогулянкова алея зі скульптурами, дитячими майданчиками та панорамами старого Києва."@uk ;
-    tour:entryPriceEUR 0.0 ;
+    tour:entryPriceUAH 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/park> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     tour:nextStop <https://example.org/tourism/attraction/andriivska-church>,
@@ -276,7 +276,7 @@ tour:TouristRoute a rdfs:Class .
 <https://example.org/tourism/attraction/mariinskyi-park> a tour:Attraction ;
     rdfs:label "Маріїнський парк"@uk ;
     dcterms:description "Історичний парк біля Маріїнського палацу з прогулянковими алеями та видами на Дніпро."@uk ;
-    tour:entryPriceEUR 0.0 ;
+    tour:entryPriceUAH 0.0 ;
     tour:hasAttractionType <https://example.org/tourism/type/park> ;
     tour:locatedInCity <https://example.org/tourism/city/kyiv> ;
     schema:category "Парк"@uk ;

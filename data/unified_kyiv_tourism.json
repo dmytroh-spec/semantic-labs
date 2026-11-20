@@ -1,5 +1,7 @@
 {
   "schema_version": "1.0",
+  "currency": "UAH",
+  "price_note": "Орієнтовна вартість; актуальний тариф слід перевірити перед відвідуванням.",
   "countries": [
     {
       "id": "ukraine",
@@ -53,7 +55,7 @@
       "longitude": 30.5143,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Sophia%20Cathedral%20in%20Kyiv.jpg",
       "rating": 4.8,
-      "price": 12,
+      "price": 480,
       "wikidata": "http://www.wikidata.org/entity/Q830054",
       "entity_id": "attraction/saint-sophia",
       "semantic_facts": [
@@ -138,7 +140,7 @@
       "longitude": 30.5133,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Gate%20in%20Kyiv.jpg",
       "rating": 4.7,
-      "price": 5,
+      "price": 200,
       "wikidata": "http://www.wikidata.org/entity/Q4289171",
       "entity_id": "attraction/golden-gate",
       "semantic_facts": [
@@ -283,7 +285,7 @@
       "longitude": 30.559,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Pechersk%20Lavra.jpg",
       "rating": 4.8,
-      "price": 8,
+      "price": 320,
       "wikidata": "http://www.wikidata.org/entity/Q242711",
       "entity_id": "attraction/kyiv-pechersk-lavra",
       "semantic_facts": [
@@ -439,7 +441,7 @@
       "longitude": 30.5177,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/St%20Andrew%27s%20Church%20Kyiv.jpg",
       "rating": 4.8,
-      "price": 5,
+      "price": 200,
       "entity_id": "attraction/andriivska-church",
       "semantic_facts": [
         {
@@ -484,7 +486,7 @@
       "longitude": 30.5631,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mother%20Ukraine%20Kyiv.jpg",
       "rating": 4.8,
-      "price": 15,
+      "price": 600,
       "entity_id": "attraction/mother-ukraine",
       "semantic_facts": [
         {
@@ -516,7 +518,7 @@
       "longitude": 30.5151,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine.jpg",
       "rating": 4.6,
-      "price": 6,
+      "price": 240,
       "entity_id": "attraction/national-history-museum",
       "semantic_facts": []
     },
@@ -534,7 +536,7 @@
       "longitude": 30.563,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/National%20Museum%20of%20the%20History%20of%20Ukraine%20in%20the%20Second%20World%20War.jpg",
       "rating": 4.8,
-      "price": 7,
+      "price": 280,
       "entity_id": "attraction/war-history-museum",
       "semantic_facts": [
         {
@@ -590,7 +592,7 @@
       "longitude": 30.5177,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/One%20Street%20Museum%20Kyiv.jpg",
       "rating": 4.7,
-      "price": 5,
+      "price": 200,
       "entity_id": "attraction/one-street-museum",
       "semantic_facts": [
         {
@@ -770,7 +772,7 @@
       "longitude": 30.525,
       "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv%20Funicular.jpg",
       "rating": 4.6,
-      "price": 1,
+      "price": 40,
       "entity_id": "attraction/kyiv-funicular",
       "semantic_facts": [
         {

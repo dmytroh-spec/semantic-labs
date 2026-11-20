@@ -301,7 +301,7 @@ graph.add((attraction_uri, TOUR.locatedInCity, city_uri))
 graph.add((attraction_uri, TOUR.hasAttractionType, type_uri))
 graph.add((attraction_uri, SCHEMA.ratingValue,
            Literal(str(item["rating"]), datatype=XSD.decimal)))
-graph.add((attraction_uri, TOUR.entryPriceEUR,
+graph.add((attraction_uri, TOUR.entryPriceUAH,
            Literal(str(item["price"]), datatype=XSD.decimal)))''', "Лістинг 1 — фрагмент програмної побудови RDF-графу")
     add_body(doc, "Після програмного формування граф серіалізується у data/kyiv_graph_generated.ttl і data/kyiv_graph.jsonld. Далі до нього додається ручний Turtle-фрагмент, а завершена версія зберігається у data/kyiv_graph.ttl.")
 
@@ -328,8 +328,8 @@ graph.add((attraction_uri, TOUR.entryPriceEUR,
     add_heading(doc, "Запит 1. Доступні пам’ятки з високим рейтингом", level=2)
     add_code(doc, '''SELECT ?name ?rating ?price WHERE {
   ?item a tour:Attraction ; rdfs:label ?name ;
-        schema:ratingValue ?rating ; tour:entryPriceEUR ?price .
-  FILTER(?rating >= 4.7 && ?price <= 15)
+        schema:ratingValue ?rating ; tour:entryPriceUAH ?price .
+  FILTER(?rating >= 4.7 && ?price <= 600)
 }
 ORDER BY DESC(?rating) ?price ?name''')
     add_body(doc, "Запит повернув 13 результатів. Нижче наведено частину вибірки.", indent=False)
@@ -379,7 +379,7 @@ GROUP BY ?city''')
     add_code(doc, '''SELECT ?type (AVG(?price) AS ?averagePrice)
              (COUNT(?item) AS ?count) WHERE {
   ?item a tour:Attraction ; tour:hasAttractionType ?typeResource ;
-        tour:entryPriceEUR ?price .
+        tour:entryPriceUAH ?price .
   ?typeResource rdfs:label ?type .
 }
 GROUP BY ?type
@@ -410,10 +410,10 @@ ORDER BY DESC(?averagePrice)''')
     add_heading(doc, "Помилковий і виправлений приклад")
     add_body(doc, "Потенційна помилка полягає у збереженні числових значень як звичайних рядків. У такому разі SPARQL може виконувати лексикографічне, а не числове порівняння, а агрегат AVG не матиме коректного числового типу.")
     add_code(doc, '''# Помилково: значення не має числового datatype
-graph.add((uri, TOUR.entryPriceEUR, Literal(item["price"])))
+graph.add((uri, TOUR.entryPriceUAH, Literal(item["price"])))
 
 # Виправлено: явний тип xsd:decimal
-graph.add((uri, TOUR.entryPriceEUR,
+graph.add((uri, TOUR.entryPriceUAH,
            Literal(str(item["price"]), datatype=XSD.decimal)))''', "Лістинг 4 — правильна типізація числового літерала")
     add_body(doc, "Явна типізація xsd:decimal забезпечує коректну роботу FILTER, ORDER BY та AVG. Аналогічний принцип застосовано до рейтингу; для населення використано xsd:integer.")
 

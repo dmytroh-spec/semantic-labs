@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
-from app.repository import get_attraction, list_attractions, list_routes, load_data
+from app.repository import get_attraction, get_route, list_attractions, list_routes, load_data
 
 app = FastAPI(
     title="Kyiv Semantic Guide API",
@@ -68,3 +68,11 @@ def attraction(attraction_id: str) -> dict:
 def routes() -> dict:
     items = list_routes()
     return {"count": len(items), "items": items}
+
+
+@app.get("/api/routes/{route_id}", tags=["routes"])
+def route(route_id: str) -> dict:
+    item = get_route(route_id)
+    if item is None:
+        raise HTTPException(status_code=404, detail="Tourist route not found")
+    return item
